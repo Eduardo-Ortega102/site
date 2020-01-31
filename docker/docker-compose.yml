@@ -1,0 +1,19 @@
+version: "3"
+
+services: 
+    
+    personal_website:
+        build: ./images/apache/
+        hostname: personal_website
+        container_name: personal_website
+        volumes: 
+            - ../app:/var/www/html
+        networks:
+            - personal_website_network
+        expose:
+            - "80"
+        ports:
+            - "80:80"
+            
+networks:
+    personal_website_network:
