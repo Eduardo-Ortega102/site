@@ -1,0 +1,9 @@
+html, body {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 90%;
+}
