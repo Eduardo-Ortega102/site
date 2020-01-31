@@ -61,6 +61,28 @@
                         </div>
                     </div>
                 </div>
+                <button class="link button curriculum no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
+                    <i class="fas fa-file-pdf"></i>
+                    <span> Curriculum </span>
+                </button>
+                <div id="curriculum-dialog" class="modal-dialog">
+                    <div class="modal-window">
+                        <h2 class="modal-title">Curriculum Vitae</h2>
+                        <div class="modal-content">
+                            <a class="link language" href="./cv/CV-EduardoOrtega-ENGLISH.pdf">
+                                <i class="fas fa-language"></i> 
+                                <p>ENGLISH</p>
+                            </a>
+                            <a class="link language" href="./cv/CV-EduardoOrtega-ESPAÑOL.pdf">
+                                <i class="fas fa-language"></i> 
+                                <p>ESPAÑOL</p>
+                            </a>
+                        </div>
+                        <div class="modal-actions">
+                            <button onclick="closeModal('curriculum-dialog')">close</button>
+                        </div>
+                    </div>
+                </div>
                 <p class="footer">
                     If you are interested in this site's code, go ahead and check it out
                     <a class="link source-code" href="https://github.com/Eduardo-Ortega102/site" target="_blank" rel="noopener noreferrer">here</a>

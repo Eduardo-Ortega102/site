@@ -79,6 +79,41 @@ html, body {
     outline: 0;
 }
 
+.link.button.curriculum {
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    border-radius: 6px;
+    font-size: 2rem;
+    padding: 9px 18px;
+    margin-top: 22px;
+    min-width: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.link.language {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.link.language:hover {
+    background-color: rgba(9, 30, 66, 0.10);
+}
+
+.link.language i {
+    font-size: 2.3rem;
+    color: #4a8cf7;
+}
+
+.link.language p {
+    margin: 0;
+    font-size: 1.3em;
+    padding-left: 1.5vh;
+}
+
 .links-bar {
     display: flex;
     flex-wrap: wrap;
