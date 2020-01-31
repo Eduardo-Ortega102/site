@@ -44,7 +44,9 @@
                     <a class="link button" href="https://bitbucket.org/Eduardo-Ortega102/"><i class="fab fa-bitbucket"></i></a>
                     <a class="link button" href="https://es.linkedin.com/in/eortegan"><i class="fab fa-linkedin-in"></i></a>
                     <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
-                    <button class="link button no-focus" onclick="openModal('contact-dialog')"><i class="fas fa-envelope"></i></button>
+                    <button class="link button no-focus" onclick="openModal('contact-dialog')" onmousedown="mouseDown('contact-dialog', event)">
+                        <i class="fas fa-envelope"></i>
+                    </button>
                     <div id="contact-dialog" class="modal-dialog">
                         <div class="modal-window">
                             <h2 class="modal-title">Email</h2>

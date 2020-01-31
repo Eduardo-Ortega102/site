@@ -20,6 +20,14 @@ function closeModal(id) {
 }
 
 
+function mouseDown(id, event) {
+    const MIDDLE_MOUSE_BUTTON = 1;
+    if (event.button == MIDDLE_MOUSE_BUTTON) {
+        openModal(id);
+    }
+}
+
+
 function copyToClipBoard(elementId, reporterId) {
     var element = document.getElementById(elementId);
     element.select();
