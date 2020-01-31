@@ -12,7 +12,6 @@ html, body {
     color: white;
     height: 100%;
     width: 100%;
-    min-width: 300px;
     background-image: url('../img/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,13 +22,64 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.main-header .content-background {
     width: 100%;
     height: 100vh;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
     bottom: 0px;
     position: absolute;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link.source-code {
+    text-decoration: underline;
+}
+
+.link.web {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+    font-size: 2.5rem;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    transform: none;
+}
+
+.link.web:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.links-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    min-width: 200px;
+    padding: 16px;
 }
