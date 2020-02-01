@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     min-width: 300px;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .error404 {
@@ -35,7 +36,6 @@ html, body {
     height: 100%;
     text-align: center;
     letter-spacing: 0.03rem;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,12 +46,14 @@ h2 {
     margin: 16px 6px;
     margin-top: 0px;
     padding: 6px 16px;
+    letter-spacing: -0.03rem;
 }
 
 a, p {
     font-size: 1.5rem;
     padding: 6px 16px;
-    margin: 16px 6px
+    margin: 16px 6px;
+    letter-spacing: -0.01rem;
 }
 
 a {
