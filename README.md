@@ -7,5 +7,5 @@ ___
 
 ### Credits:
 
+* Favicon: created on https://favicon.io/
 * Background Image: Caldera de Taburiente National Park
-
