@@ -7,7 +7,7 @@ services:
         hostname: personal_website
         container_name: personal_website
         volumes: 
-            - ../app:/var/www/html
+            - ../docs:/var/www/html
         networks:
             - personal_website_network
         expose:
