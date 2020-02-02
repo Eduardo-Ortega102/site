@@ -1,5 +1,6 @@
 html, body {
     min-width: 300px;  
+    overflow: hidden; /*TODO: remove this when the site grows*/
     width: 100%;
     height: 100%;
     margin: 0px;
