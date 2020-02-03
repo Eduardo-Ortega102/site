@@ -1,6 +1,6 @@
-# eduardo-ortega102.github.io/site
+# www.theagilecrafter.com
 
-The source of my personal site, at [eduardo-ortega102.github.io/site](http://eduardo-ortega102.github.io/site).
+The source of my personal site, at [www.theagilecrafter.com](www.theagilecrafter.com).
 
 Feel free to fork it and change it however you want.
 ___
