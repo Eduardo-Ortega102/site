@@ -43,3 +43,10 @@ function copyToClipBoard(elementId, reporterId) {
         reporterElement.style.visibility = 'hidden';
     }, 1500);
 }
+
+
+function changeLanguage(newLanguage) {
+    var url = window.location.href;
+    const language = url.includes('/es/') ? '/es/' : '/en/';
+    window.location.href = url.replace(language, '/' + newLanguage + '/');
+}

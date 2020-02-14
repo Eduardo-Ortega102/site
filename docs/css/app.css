@@ -271,3 +271,39 @@ span {
     border-top-color: #191919;
     border-bottom: 0;
 }
+
+
+.language-menu {
+    width: calc(100% - 24px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px;
+    margin-bottom: 0px;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.language-menu a {
+    margin-left: 18px;
+    text-align: center;
+    width: 100px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    color: inherit;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.language-menu a:hover {
+    cursor: pointer;
+}
+
+.language-menu a:hover, .current-language {
+    background-color: #fff;
+    color: #000 !important;
+}

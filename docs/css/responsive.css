@@ -60,3 +60,16 @@
         margin: 0.06em 0;
     }
 }
+
+@media (max-width: 700px) {
+    .language-menu {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .language-menu {
+        padding-right: 0px;
+        justify-content: center;
+    }
+}
