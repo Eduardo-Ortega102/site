@@ -50,3 +50,10 @@ function changeLanguage(newLanguage) {
     const language = url.includes('/es/') ? '/es/' : '/en/';
     window.location.href = url.replace(language, '/' + newLanguage + '/');
 }
+
+
+function scrollToMainContent() {
+    document.querySelector('#main-content').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
