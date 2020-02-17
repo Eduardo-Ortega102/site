@@ -309,7 +309,7 @@ span {
 #scrolldown-button {
     display: block;
     position: absolute;
-    bottom: 45px;
+    bottom: 6px;
     left: 50%;
     margin-left: -16px;
     width: 34px;
