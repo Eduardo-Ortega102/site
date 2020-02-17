@@ -37,7 +37,7 @@
         margin-top: 8px;
     }
     .links-bar {
-        width: 60%;
+        width: 70%;
         padding: 8px;
         max-width: 682px;
     }
@@ -63,13 +63,30 @@
 
 @media (max-width: 700px) {
     .language-menu {
+        font-size: 1.2rem;
         padding-right: 30px;
     }
 }
 
 @media (max-width: 500px) {
     .language-menu {
+        font-size: 1rem;
         padding-right: 0px;
-        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .language-menu a {
+        margin-left: 0px !important;
+    }
+
+    .link.button.curriculum {
+        padding: 6px 10px;
+        font-size: 1.6rem;
+    }
+
+    .link.button {
+        width: 52px;
+        height: 52px;
+        font-size: 1.9rem;
     }
 }
