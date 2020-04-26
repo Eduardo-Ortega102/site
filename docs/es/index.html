@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/brands.min.css">
@@ -41,7 +42,7 @@
   -->
     <header class="main-header">
         <div class="content-background">
-            <div class="content">
+            <div class="content-wrapper">
                 <div class="language-menu">
                     <a class="language-option current-language" onclick="changeLanguage('es')">ESPAÑOL</a>
                     <a class="language-option" onclick="changeLanguage('en')">ENGLISH</a>
@@ -50,32 +51,6 @@
                 <p class="subtitle">
                     Estudiante de Ingenier&iacute;a del Software &nbsp;&bull;&nbsp; Aprendizaje constante
                 </p>
-                <div class="links-bar">
-                    <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
-                    <a class="link button" href="https://bitbucket.org/Eduardo-Ortega102/"><i class="fab fa-bitbucket"></i></a>
-                    <a class="link button" href="https://es.linkedin.com/in/eortegan/es/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
-                    <button class="link button no-focus" onclick="openModal('contact-dialog')" onmousedown="mouseDown('contact-dialog', event)">
-                        <i class="fas fa-envelope"></i>
-                    </button>
-                    <div id="contact-dialog" class="modal-dialog">
-                        <div class="modal-window">
-                            <h2 class="modal-title">Email</h2>
-                            <div class="modal-content">
-                                <div id="email-speech-bubble" class="speech-bubble">&iexcl;Copiado!</div>
-                                <input id="email-address" type="text" value="eduardo.ortega1002@gmail.com" readOnly="true"/>
-                            </div>
-                            <div class="modal-actions">
-                                <button onclick="closeModal('contact-dialog')">cerrar</button>
-                                <button onclick="copyToClipBoard('email-address', 'email-speech-bubble')">copiar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="link button curriculum no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
-                    <i class="fas fa-file-pdf"></i>
-                    <span> Curriculum </span>
-                </button>
                 <div id="curriculum-dialog" class="modal-dialog">
                     <div class="modal-window">
                         <h2 class="modal-title">Curriculum Vitae</h2>
@@ -103,7 +78,32 @@
         </div>
     </header>
     <div id='main-content'>
-
+        <section id='contact'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Contacto</h2>
+                </div>
+                <div class='content'>
+                    <div class='message'>
+                        <p class='message-title'>¡Hagamos algo asombroso!</p>
+                        <p class='message-body'>No dudes en contactar conmigo. Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades.</p>
+                        <div id='email'>
+                            <div id="email-speech-bubble" class="speech-bubble">¡Copiado!</div>
+                            <input id="email-address" type="text" value="eduardo.ortega1002@gmail.com" readOnly="true"/>
+                            <button class="action-button" onclick="copyToClipBoard('email-address', 'email-speech-bubble')">COPIAR EMAIL AL PORTAPAPELES</button>
+                        </div>
+                    </div>
+                    
+                    <div class='message'>
+                        <p class='message-body'>Si quieres una versi&oacute;n en PDF de mi CV, puedes descargarla haciendo clic en este bot&oacute;n.</p>
+                        <button class="action-button no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
+                            <i class="fas fa-file-pdf"></i>
+                            Curriculum
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="footer">
         <div class="media">
