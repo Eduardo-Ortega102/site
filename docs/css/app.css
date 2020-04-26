@@ -325,3 +325,48 @@ span {
 #scrolldown-button:hover {
     cursor: pointer;
 }
+
+
+.footer {
+    padding: 20px;
+    width: calc(100% - 40px);
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: center;
+    color: #C0C0C0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.footer > * {
+    margin-bottom: 6px;
+}
+
+.footer p {
+    margin: 0px;
+}
+
+.footer .media {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .link.button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer .link.button:hover {
+    color: black;
+    cursor: pointer;
+    opacity: 1;
+    transform: none;
+    background-color: #C0C0C0;
+}
