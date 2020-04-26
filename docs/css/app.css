@@ -421,10 +421,17 @@ section .content {
 }
 
 .paragraph {
-    min-width: 200px;
-    max-width: 400px;
     padding: 16px;
+    min-width: 200px;
     text-align: justify;
+}
+
+.paragraph.big {
+    max-width: 500px;
+}
+
+.paragraph.small {
+    max-width: 400px;
 }
 
 .paragraph-title {
@@ -455,4 +462,83 @@ section .content {
     max-height: 80px;
     max-width: 160px;
     padding: 16px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.progress-bar span {
+    width: 20%;
+}
+
+.progress-bar-background {
+    background-color: #e9e5e5;
+    width: 80%;
+    border-radius: 6px;
+}
+
+.progress-bar-foreground {
+    text-align: right;
+    text-transform: uppercase;
+    background-color: #74cdba;
+    border-radius: 6px;
+    padding: 3px 6px;
+}
+
+#spanish-bar {
+    width: calc(100% - 12px);
+}
+
+#english-bar {
+    width: calc(66% - 12px);
+}
+
+#german-bar {
+    width: calc(33% - 12px);
+}
+
+.avatar {
+    display: block;
+    max-width: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 10px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cornerstone-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.cornerstone {
+    height: 153px;
+    max-width: 96px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px solid #ddd;
+    padding: 8px;
+    font-weight: bold;
+    color: inherit;
+    margin: 8px;
+}
+
+.cornerstone img {
+    max-width: inherit;
+    display: block;
+    margin-bottom: 6px;
+    border-radius: inherit;
 }

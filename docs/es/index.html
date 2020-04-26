@@ -70,21 +70,80 @@
                     </div>
                 </div>
             </div>
-            <div class="header-footer">
-                <a class="link manifiesto" href="https://agilemanifesto.org/iso/es/manifesto.html" target="_blank" rel="noopener noreferrer">Manifiesto por el Desarrollo &Aacute;gil de Software</a>
-                <a class="link manifiesto" href="https://manifesto.softwarecraftsmanship.org/#/es" target="_blank" rel="noopener noreferrer">Manifesto por la Artesan&iacute;a del Software</a>
-            </div>
             <a id='scrolldown-button' class='fas fa-angle-down' onclick="scrollToMainContent()"></a>
         </div>
     </header>
     <div id='main-content'>
+        <section id='about-me'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Sobre mi</h2>
+                </div>
+                <div class='content'>
+                    <div class='paragraph big'>
+                        <img class='avatar' alt='avatar' src='/img/avatar.jpeg'>
+                        <p class='paragraph-title'>¿Qui&eacute;n soy?</p>
+                        <p class='paragraph-body'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class='paragraph big'>
+                        <p class='paragraph-title'>Mis Piedras Angulares</p>
+                        <p class='paragraph-body'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <div class='cornerstone-container'>
+                            <a class='cornerstone' href="https://agilemanifesto.org/iso/es/manifesto.html" target="_blank" rel="noopener noreferrer">
+                                <img alt='agile' src='/img/agile.png'> 
+                                Manifiesto por el Desarrollo &Aacute;gil de Software
+                            </a>
+                            <a class='cornerstone' href="https://manifesto.softwarecraftsmanship.org/#/es" target="_blank" rel="noopener noreferrer">
+                                <img alt='craftsman' src='/img/craftsman.jpg'> 
+                                Manifesto por la Artesan&iacute;a del Software
+                            </a>
+                            <a class='cornerstone' href="https://keepachangelog.com/es-ES/" target="_blank" rel="noopener noreferrer">
+                                <img alt='changelog' src='/img/changelog2.jpg'> 
+                                Mant&eacute;n un Changelog
+                            </a>
+                        </div>
+                        <p class='paragraph-title'>Idiomas (Marco Europeo de Referencia)</p>
+                        <div id='human-languages'>
+                            <div class="progress-bar">
+                                <span>Espa&ntilde;ol</span>
+                                <div class="progress-bar-background">
+                                    <div id='spanish-bar' class='progress-bar-foreground'>Native</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>Ingl&eacute;s</span>
+                                <div class="progress-bar-background">
+                                    <div id='english-bar' class='progress-bar-foreground'>B2</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>Alem&aacute;n</span>
+                                <div class="progress-bar-background">
+                                    <div id='german-bar' class='progress-bar-foreground'>A2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id='stack'>
             <div class='content-wrapper'>
                 <div class='section-title'>
                     <h2>Tecnolog&iacute;as y herramientas</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph'>
+                    <div class='paragraph small'>
                         <p class='paragraph-body'>
                             Aqu&iacute; enumero las tecnolog&iacute;as y herramientas con las que estoy m&aacute;s familiarizado. 
                             Creo que siempre hay espacio para el aprendizaje y la mejora, por lo tanto, espero que esta lista siga creciendo.
@@ -113,7 +172,7 @@
                     <h2>Contacto</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph'>
+                    <div class='paragraph small'>
                         <p class='paragraph-title'>¡Hagamos algo asombroso!</p>
                         <p class='paragraph-body'>No dudes en contactar conmigo. Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades.</p>
                         <div id='email'>
@@ -123,7 +182,7 @@
                         </div>
                     </div>
                     
-                    <div class='paragraph'>
+                    <div class='paragraph small'>
                         <p class='paragraph-body'>Si quieres una versi&oacute;n en PDF de mi CV, puedes descargarla haciendo clic en este bot&oacute;n.</p>
                         <button class="action-button no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
                             Curriculum

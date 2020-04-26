@@ -92,4 +92,10 @@
         height: 52px;
         font-size: 1.9rem;
     }
+    
+    .progress-bar-background {
+        background-color: #e9e5e5;
+        width: 70%;
+        border-radius: 6px;
+    }
 }

@@ -70,21 +70,80 @@
                     </div>
                 </div>
             </div>
-            <div class="header-footer">
-                <a class="link manifiesto" href="https://agilemanifesto.org/" target="_blank" rel="noopener noreferrer">Manifesto for Agile Software Development</a>
-                <a class="link manifiesto" href="https://manifesto.softwarecraftsmanship.org/" target="_blank" rel="noopener noreferrer">Manifesto for Software Craftsmanship</a>
-            </div>
             <a id='scrolldown-button' class='fas fa-angle-down' onclick="scrollToMainContent()"></a>
         </div>
     </header>
     <div id='main-content'>
+        <section id='about-me'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>About me</h2>
+                </div>
+                <div class='content'>
+                    <div class='paragraph big'>
+                        <img class='avatar' alt='avatar' src='/img/avatar.jpeg'>
+                        <p class='paragraph-title'>Who am I?</p>
+                        <p class='paragraph-body'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class='paragraph big'>
+                        <p class='paragraph-title'>My Cornerstones</p>
+                        <p class='paragraph-body'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <div class='cornerstone-container'>
+                            <a class='cornerstone' href="https://agilemanifesto.org/" target="_blank" rel="noopener noreferrer">
+                                <img alt='agile' src='/img/agile.png'> 
+                                Manifesto for Agile Software Development
+                            </a>
+                            <a class='cornerstone' href="https://manifesto.softwarecraftsmanship.org/" target="_blank" rel="noopener noreferrer">
+                                <img alt='craftsman' src='/img/craftsman.jpg'> 
+                                Manifesto for Software Craftsmanship
+                            </a>
+                            <a class='cornerstone' href="https://keepachangelog.com/en/" target="_blank" rel="noopener noreferrer">
+                                <img alt='changelog' src='/img/changelog2.jpg'> 
+                                Keep a Changelog
+                            </a>
+                        </div>
+                        <p class='paragraph-title'>Language Skills (European Framework of Reference)</p>
+                        <div id='human-languages'>
+                            <div class="progress-bar">
+                                <span>Spanish</span>
+                                <div class="progress-bar-background">
+                                    <div id='spanish-bar' class='progress-bar-foreground'>Native</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>English</span>
+                                <div class="progress-bar-background">
+                                    <div id='english-bar' class='progress-bar-foreground'>B2</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>German</span>
+                                <div class="progress-bar-background">
+                                    <div id='german-bar' class='progress-bar-foreground'>A2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id='stack'>
             <div class='content-wrapper'>
                 <div class='section-title'>
                     <h2>Stack and Tools</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph'>
+                    <div class='paragraph small'>
                         <p class='paragraph-body'>
                             Here you can see the technologies and tools which I am most familiar with. 
                             I think there is always room for learning and improvement, therefore I expect this list continues to grow.
@@ -113,7 +172,7 @@
                     <h2>Contact</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph'>
+                    <div class='paragraph small'>
                         <p class='paragraph-title'>Let's do something amazing!</p>
                         <p class='paragraph-body'>Feel free to get in touch with me. I am always open to discuss new projects, creative ideas or opportunities.</p>
                         <div id='email'>
@@ -123,7 +182,7 @@
                         </div>
                     </div>
                     
-                    <div class='paragraph'>
+                    <div class='paragraph small'>
                         <p class='paragraph-body'>If you want a PDF version of my CV, you can download it by clicking this button.</p>
                         <button class="action-button no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
                             Curriculum
