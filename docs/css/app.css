@@ -573,17 +573,19 @@ section .content {
 .navigation-link, .dropdown {
     display: inline-block;
     text-decoration: none;
-    padding: 23px 7px;
+    padding: 18px 0;
     color: inherit;
-    border-top: 4px solid transparent;
+    width: 85px;
+    text-align: center;
 }
 
 .navigation-link:hover {
     cursor: pointer;
 }
 
-.navigation-buttons>a:hover {
-    border-top-color: black;
+.navigation-link:hover, .dropdown-content a:hover {
+    background-color: #74cdba;
+    color: white;
 }
 
 .dropdown {
@@ -592,12 +594,13 @@ section .content {
 
 .dropdown:hover {
     cursor: pointer;
-    border-top-color: black;
+    background-color: #74cdba;
+    color: white;
 }
 
 .dropdown-content {
     display: none;
-    margin-top: 22px;
+    margin-top: 16px;
     position: absolute;
     background-color: white;
     z-index: 1000;
@@ -608,15 +611,9 @@ section .content {
     color: black;
     text-decoration: none;
     text-align: center;
-    width: 100px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+    width: 112px;
     text-transform: uppercase;
     padding: 6px 12px;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
 .show {

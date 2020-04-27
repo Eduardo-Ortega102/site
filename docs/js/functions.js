@@ -53,7 +53,7 @@ function changeLanguage(newLanguage) {
 
 
 function scrollToElement(id) {
-    const menuHeight = 72;
+    const menuHeight = 58;
     const element = document.getElementById(id);
 
     window.scrollTo({

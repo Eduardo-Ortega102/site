@@ -101,6 +101,10 @@
     .main-buttons {
         width: 100%;
     }
+    .navigation-bar {
+        padding: 0px;
+        width: 100%;
+    }
     .navigation-bar a:not(.icon):not(.brand), .dropdown {
         display: none;
     }
@@ -113,17 +117,21 @@
         background-color: #e4e4e4;
         border-radius: 4px;
     }
+    .navigation-bar.responsive .navigation-link:not(.brand), 
+    .navigation-bar.responsive .dropdown {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .navigation-bar.responsive .navigation-content, 
     .navigation-bar.responsive .navigation-buttons, 
     .navigation-bar.responsive .dropdown, 
-    .navigation-bar.responsive a:not(.icon) {
+    .navigation-bar.responsive a:not(.icon):not(.brand) {
         display: block !important;
         text-align: left;
+        width: 100%;
     }
     .navigation-bar.responsive .dropdown-content {
-        position: relative;
-    }
-    .navigation-bar.responsive .dropdown-content a {
         width: 100%;
+        left: 0;
     }
 }
