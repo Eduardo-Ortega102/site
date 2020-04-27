@@ -578,6 +578,10 @@ section .content {
     border-top: 4px solid transparent;
 }
 
+.navigation-link:hover {
+    cursor: pointer;
+}
+
 .navigation-buttons>a:hover {
     border-top-color: black;
 }

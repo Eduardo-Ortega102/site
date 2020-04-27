@@ -44,7 +44,7 @@
         <div class='content-wrapper'>
             <div class='navigation-content'>
                 <div class='main-buttons'>
-                    <a class='brand navigation-link' href='#'>Inicio</a>
+                    <a class='brand navigation-link' onclick="scrollToElement('main-header')">Inicio</a>
                     <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
                         <div class='mobile-menu'>
                             <div class='horizontal-bar'></div>
@@ -54,9 +54,9 @@
                     </a>
                 </div>
                 <div class='navigation-buttons'>
-                    <a class='navigation-link' href='#about-me'>Sobre mi</a>
-                    <a class='navigation-link' href='#stack'>Tecnolog&iacute;as</a>
-                    <a class='navigation-link' href='#contact'>Contacto</a>
+                    <a class='navigation-link' onclick="scrollToElement('about-me')">Sobre mi</a>
+                    <a class='navigation-link' onclick="scrollToElement('stack')">Tecnolog&iacute;as</a>
+                    <a class='navigation-link' onclick="scrollToElement('contact')">Contacto</a>
                     <div class="dropdown" onclick="openLanguageMenu()">
                         Idioma
                         <i class="fa fa-caret-down"></i>
@@ -69,7 +69,7 @@
             </div>
         </div>
     </nav>
-    <header class="main-header">
+    <header id='main-header' class="main-header">
         <div class="content-background">
             <div class="content-wrapper">
                 <h1 class="title">Eduardo Ortega Naranjo</h1>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <a id='scrolldown-button' class='fas fa-angle-down' onclick="scrollToMainContent()"></a>
+            <a id='scrolldown-button' class='fas fa-angle-down' onclick="scrollToElement('main-content')"></a>
         </div>
     </header>
     <div id='main-content'>

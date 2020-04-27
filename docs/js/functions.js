@@ -52,9 +52,13 @@ function changeLanguage(newLanguage) {
 }
 
 
-function scrollToMainContent() {
-    document.querySelector('#main-content').scrollIntoView({
-        behavior: 'smooth'
+function scrollToElement(id) {
+    const menuHeight = 72;
+    const element = document.getElementById(id);
+
+    window.scrollTo({
+         top: element.offsetTop - menuHeight,
+         behavior: 'smooth'
     });
 }
 
