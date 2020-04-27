@@ -57,3 +57,42 @@ function scrollToMainContent() {
         behavior: 'smooth'
     });
 }
+
+function toggleMenu() {
+    var menu = document.getElementById('navigation-bar');
+    if (menu.classList.contains('responsive')){
+        closeMenu(menu);
+    } else {
+        openMenu(menu);
+    }
+}
+
+function closeMenu(menu){
+    menu.classList.remove('responsive');
+}
+
+function openMenu(menu) {
+    menu.classList.add('responsive');
+}
+
+function openLanguageMenu() {
+    document.getElementById('languageDropdown').classList.toggle('show');
+}
+
+window.onclick = function (event) {
+    var clickedElement = event.target;
+    if (!clickedElement.matches('.dropdown')) {
+        var languageDropdown = document.getElementById('languageDropdown');
+        if (languageDropdown.classList.contains('show')) {
+            languageDropdown.classList.remove('show');
+        }
+        var menuSwitch = document.getElementById('menu-switch');
+        if (clickedElement !== languageDropdown && 
+            clickedElement !== menuSwitch && !menuSwitch.contains(clickedElement)) { 
+            var menu = document.getElementById('navigation-bar');
+            if (menu.classList.contains('responsive')){
+                closeMenu(menu);
+            }
+        }
+    }
+};

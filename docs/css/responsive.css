@@ -77,25 +77,53 @@
         padding-right: 0px;
         justify-content: space-around;
     }
-
     .language-menu a {
         margin-left: 0px !important;
     }
-
     .link.button.curriculum {
         padding: 6px 10px;
         font-size: 1.6rem;
     }
-
     .link.button {
         width: 52px;
         height: 52px;
         font-size: 1.9rem;
     }
-    
     .progress-bar-background {
         background-color: #e9e5e5;
         width: 70%;
         border-radius: 6px;
+    }
+}
+
+/*NAVIGATION BAR RESPONSIVE*/
+@media (max-width: 750px) {
+    .main-buttons {
+        width: 100%;
+    }
+    .navigation-bar a:not(.icon):not(.brand), .dropdown {
+        display: none;
+    }
+    .navigation-bar a.icon {
+        display: block;
+        margin-right: 8px;
+        padding: 8px;
+    }
+    .navigation-bar.responsive a.icon {
+        background-color: #e4e4e4;
+        border-radius: 4px;
+    }
+    .navigation-bar.responsive .navigation-content, 
+    .navigation-bar.responsive .navigation-buttons, 
+    .navigation-bar.responsive .dropdown, 
+    .navigation-bar.responsive a:not(.icon) {
+        display: block !important;
+        text-align: left;
+    }
+    .navigation-bar.responsive .dropdown-content {
+        position: relative;
+    }
+    .navigation-bar.responsive .dropdown-content a {
+        width: 100%;
     }
 }

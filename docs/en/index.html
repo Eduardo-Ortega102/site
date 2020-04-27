@@ -40,13 +40,38 @@
 	Hi there! I'm glad that you are taking a look at the source code of this page!
 	If you are interested in the code, go ahead and check it out at https://github.com/Eduardo-Ortega102/site
   -->
+    <nav id='navigation-bar' class='navigation-bar'>
+        <div class='content-wrapper'>
+            <div class='navigation-content'>
+                <div class='main-buttons'>
+                    <a class='brand navigation-link' href='#'>Home</a>
+                    <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+                        <div class='mobile-menu'>
+                            <div class='horizontal-bar'></div>
+                            <div class='horizontal-bar margin'></div>
+                            <div class='horizontal-bar'></div>
+                        </div>
+                    </a>
+                </div>
+                <div class='navigation-buttons'>
+                    <a class='navigation-link' href='#about-me'>About me</a>
+                    <a class='navigation-link' href='#stack'>Stack</a>
+                    <a class='navigation-link' href='#contact'>Contact</a>
+                    <div class="dropdown" onclick="openLanguageMenu()">
+                        Language
+                        <i class="fa fa-caret-down"></i>
+                        <div id="languageDropdown" class="dropdown-content">
+                            <a onclick="changeLanguage('es')">Español</a>
+                            <a onclick="changeLanguage('en')">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <header class="main-header">
         <div class="content-background">
             <div class="content-wrapper">
-                <div class="language-menu">
-                    <a class="language-option" onclick="changeLanguage('es')">ESPAÑOL</a>
-                    <a class="language-option current-language" onclick="changeLanguage('en')">ENGLISH</a>
-                </div>
                 <h1 class="title">Eduardo Ortega Naranjo</h1>
                 <p class="subtitle">
                     Software engineering student &nbsp;&bull;&nbsp; Ever-learning programmer
