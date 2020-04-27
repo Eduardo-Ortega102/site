@@ -319,7 +319,7 @@ span {
     line-height: 1.6;
     font-size: 16px;
     text-align: center;
-    color: #C0C0C0;
+    color: #fff;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -354,7 +354,7 @@ span {
     cursor: pointer;
     opacity: 1;
     transform: none;
-    background-color: #C0C0C0;
+    background-color: #fff;
 }
 
 section {
@@ -382,7 +382,7 @@ section .content {
     width: 100%;
     display: block;
     color: white;
-    background-color: rgb(232, 81, 10);
+    background-color: #74cdba;
     margin-top: 0.5vh;
     padding: 9px 0;
     border: none;
@@ -444,8 +444,9 @@ section .content {
     margin: 18px 0;
 }
 
-#stack {
-    background-color: #f5f5f5;
+#stack, #contact {
+    /*background-color: #f5f5f5;*/
+    background-color: #F3EFE0;
 }
 
 .stack-container {
