@@ -208,110 +208,139 @@
                     <button id='personal' class='filter-button' onclick='filterProjects(this.id)'>Personal</button>
                 </div>
                 <div class='content'>
-                    <div class='project' data-categories='["web", "personal"]'>
-                        <a href='#' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='personal site' src='/img/personal-site.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Personal Website</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "personal"]'>
+                        <div id='personal-website' class='project'>
+                            <a href='#' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='personal site' src='/img/personal-site.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Personal Website</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "personal-website")'>Read more</button>
                     </div>
-                    <div class='project' data-categories='["web", "real"]'>
-                        <a href='http://www.oceanslaspalmas.es/' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='oceans' src='/img/oceans.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Oceans</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='oceans' class='project'>
+                            <a href='http://www.oceanslaspalmas.es/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='oceans' src='/img/oceans.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Oceans</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "oceans")'>Read more</button>
                     </div>
-                    <div class='project' data-categories='["web", "real"]'>
-                        <a href='http://www.geoportal.ulpgc.es/visor2/?json=catalogo1.json#' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='geoportal' src='/img/visor-geoportal.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Configurable Map Viewer</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='visor-geoportal' class='project'>
+                            <a href='http://www.geoportal.ulpgc.es/visor2/?json=catalogo1.json#' target='_blank'
+                                rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='geoportal' src='/img/visor-geoportal.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Configurable Map Viewer</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "visor-geoportal")'>Read more</button>
                     </div>
-                    <div class='project' data-categories='["web", "real"]'>
-                        <a href='http://www.geoportal.ulpgc.es/servicios/ecoaqua/' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Services List</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='servicios-ecoaqua' class='project'>
+                            <a href='http://www.geoportal.ulpgc.es/servicios/ecoaqua/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Services List</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "servicios-ecoaqua")'>Read more</button>
                     </div>
-                    <div class='project' data-categories='["web", "real"]'>
-                        <a href='http://www.geoportal.ulpgc.es/marsp/' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='marsp' src='/img/marsp.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Marsp</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='marsp' class='project'>
+                            <a href='http://www.geoportal.ulpgc.es/marsp/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='marsp' src='/img/marsp.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Marsp</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "marsp")'>Read more</button>
                     </div>
-                    <div class='project' data-categories='["web", "real"]'>
-                        <a href='http://www.idelanzarote.com/' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='lanzarote' src='/img/lanzarote.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Map Viewer</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='lanzarote' class='project'>
+                            <a href='http://www.idelanzarote.com/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='lanzarote' src='/img/lanzarote.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Map Viewer</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "lanzarote")'>Read more</button>
                     </div>
-                    <div class='project' data-categories='["web", "real"]'>
-                        <a href='http://servicios.idelanzarote.com/' target='_blank' rel='noopener noreferrer'>
-                            <div class='image-container'>
-                                <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
-                                <i class="fas fa-external-link-alt"></i>
-                            </div>
-                            <div class='overlay'>
-                                <p class='paragraph-title'>Services List</p>
-                                <p class='paragraph-body'>
-                                    Here you can see the technologies and tools which I am most familiar with.
-                                    I think there is always room for learning and improvement, therefore I expect this list continues to grow.
-                                </p>
-                            </div>
-                        </a>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='servicios-lanzarote' class='project'>
+                            <a href='http://servicios.idelanzarote.com/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Services List</p>
+                                    <p class='paragraph-body'>
+                                        Here you can see the technologies and tools which I am most familiar with.
+                                        I think there is always room for learning and improvement, therefore I expect this list
+                                        continues to grow.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "servicios-lanzarote")'>Read more</button>
                     </div>
                     <div class='project dummy'></div>
                     <div class='project dummy'></div>

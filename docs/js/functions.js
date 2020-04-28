@@ -77,6 +77,21 @@ function filterProjects(filter){
     });
 }
 
+function displayProjectInfo(button, projectId){
+    const activeClass = 'active';
+    const project = document.getElementById(projectId);
+    if (project.classList.contains(activeClass)){
+        button.innerText = 'Read more';
+        button.classList.remove(activeClass);
+        project.classList.remove(activeClass);
+    } else {
+        button.innerText = 'Read less';
+        button.classList.add(activeClass);
+        project.classList.add(activeClass);
+    }
+    button.blur();
+}
+
 
 function toggleMenu() {
     var menu = document.getElementById('navigation-bar');
