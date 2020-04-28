@@ -117,10 +117,14 @@
         background-color: #e4e4e4;
         border-radius: 4px;
     }
-    .navigation-bar.responsive .navigation-link:not(.brand), 
+    .navigation-bar.responsive .navigation-link, 
     .navigation-bar.responsive .dropdown {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .navigation-bar.responsive .dropdown a {
+        padding-left:  32px;
+        padding-right: 32px;
     }
     .navigation-bar.responsive .navigation-content, 
     .navigation-bar.responsive .navigation-buttons, 
@@ -129,7 +133,14 @@
         display: block !important;
         text-align: left;
         width: 100%;
+        max-width: unset;
+        background-color: #222;
     }
+
+    .navigation-bar.responsive .horizontal-bar {
+        background-color: #222;
+    }
+
     .navigation-bar.responsive .dropdown-content {
         width: 100%;
         left: 0;
