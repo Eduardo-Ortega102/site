@@ -81,15 +81,24 @@ function displayProjectInfo(button, projectId){
     const activeClass = 'active';
     const project = document.getElementById(projectId);
     if (project.classList.contains(activeClass)){
-        button.innerText = 'Read more';
+        button.innerText = getButtonText('expand');
         button.classList.remove(activeClass);
         project.classList.remove(activeClass);
     } else {
-        button.innerText = 'Read less';
+        button.innerText = getButtonText('contract');
         button.classList.add(activeClass);
         project.classList.add(activeClass);
     }
     button.blur();
+}
+
+function getButtonText(mode){
+    const expandMode = 'expand';
+    const isEnglish  = window.location.href.includes('/en/');
+    if (isEnglish){
+        return mode === expandMode ? 'Read more' : 'Read less';
+    }
+    return mode === expandMode ? 'Leer más' : 'Leer menos';
 }
 
 
