@@ -382,7 +382,7 @@ section .content {
     width: 100%;
     display: block;
     color: white;
-    background-color: #74cdba;
+    background-color: #22A39F;
     margin-top: 0.5vh;
     padding: 9px 0;
     border: none;
@@ -488,7 +488,7 @@ section .content {
 .progress-bar-foreground {
     text-align: right;
     text-transform: uppercase;
-    background-color: #74cdba;
+    background-color: #22A39F;
     border-radius: 6px;
     padding: 3px 6px;
 }
@@ -585,7 +585,7 @@ section .content {
 }
 
 .navigation-link:hover, .dropdown-content a:hover {
-    background-color: #74cdba;
+    background-color: #22A39F;
     color: white;
 }
 
@@ -595,7 +595,7 @@ section .content {
 
 .dropdown:hover {
     cursor: pointer;
-    background-color: #74cdba;
+    background-color: #22A39F;
     color: white;
 }
 
