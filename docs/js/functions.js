@@ -57,21 +57,37 @@ function scrollToElement(id) {
     const element = document.getElementById(id);
 
     window.scrollTo({
-         top: element.offsetTop - menuHeight,
-         behavior: 'smooth'
+        top: element.offsetTop - menuHeight,
+        behavior: 'smooth'
     });
 }
 
+
+function filterProjects(filter){
+    document.querySelectorAll('.filter-button','.active').forEach(button => {
+        button.classList.remove('active');
+    });
+    document.getElementById(filter).classList.add('active');
+    document.querySelectorAll('[data-categories]').forEach(project => {
+        if(filter !== 'all' && !project.dataset.categories.includes(filter)){
+            project.classList.add('hidden');
+        } else {
+            project.classList.remove('hidden');
+        }
+    });
+}
+
+
 function toggleMenu() {
     var menu = document.getElementById('navigation-bar');
-    if (menu.classList.contains('responsive')){
+    if (menu.classList.contains('responsive')) {
         closeMenu(menu);
     } else {
         openMenu(menu);
     }
 }
 
-function closeMenu(menu){
+function closeMenu(menu) {
     menu.classList.remove('responsive');
 }
 
@@ -91,10 +107,10 @@ window.onclick = function (event) {
             languageDropdown.classList.remove('show');
         }
         var menuSwitch = document.getElementById('menu-switch');
-        if (clickedElement !== languageDropdown && 
-            clickedElement !== menuSwitch && !menuSwitch.contains(clickedElement)) { 
+        if (clickedElement !== languageDropdown &&
+            clickedElement !== menuSwitch && !menuSwitch.contains(clickedElement)) {
             var menu = document.getElementById('navigation-bar');
-            if (menu.classList.contains('responsive')){
+            if (menu.classList.contains('responsive')) {
                 closeMenu(menu);
             }
         }

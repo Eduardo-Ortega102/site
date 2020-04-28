@@ -576,7 +576,7 @@ section .content {
     text-decoration: none;
     padding: 18px 0;
     color: inherit;
-    width: 85px;
+    min-width: 85px;
     text-align: center;
 }
 
@@ -642,4 +642,116 @@ section .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.project {
+    position: relative;
+    max-width: 350px;
+    overflow: hidden;
+    margin: 16px
+}
+
+.project.dummy {
+    width: 100%;
+}
+
+.project.hidden {
+    display: none;
+}
+
+.image-container {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.project .fa-external-link-alt {
+    padding: 8px;
+    font-size: 1.6em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: #22A39F;
+    z-index: 10;
+}
+
+.project:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.project:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.project .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 18px;
+    height: calc(100% - 36px);
+    width: calc(100% - 36px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.project:hover .overlay {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.project .paragraph-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid white;
+    width: 90%;
+    text-align: center;
+}
+
+.project p {
+    margin: 0;
+}
+
+.content.buttons {
+    justify-content: center;
+}
+
+.filter-button {
+    display: inline-block;
+    color: #22A39F;
+    border: none;
+    border-bottom: solid 1px #22A39F;
+    border-top: solid 1px #22A39F;
+    padding: 8px;
+    margin: 16px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-button:hover, .filter-button.active {
+    color: white;
+    background-color: #22A39F;
 }
