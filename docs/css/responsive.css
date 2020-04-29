@@ -8,6 +8,37 @@
     .stack-container {
         flex-direction: column;
     }
+    .project-wrapper {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .project .paragraph-title {
+        font-size: 24px;
+    }
+    .project .paragraph-body {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 400px) {
+    .project-wrapper {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .project .paragraph-title {
+        font-size: 20px;
+    }
+    .project .paragraph-body {
+        font-size: 14px;
+    }
+    .project .overlay {
+        padding: 14px;
+        height: calc(100% - 28px);
+        width: calc(100% - 28px);
+    }
+    .action-button {
+        width: 70%;
+    }
 }
 
 @media(min-width: 500px) and (max-width: 600px) {
@@ -146,7 +177,6 @@
 **  EXPERIENCE RESPONSIVE
 */
 
-
 @media(min-width: 1263px) and (max-width: 1300px) {
     .experience .fa-briefcase {
         left: 26%;
@@ -222,12 +252,6 @@
         margin-left: -13px;
     }
 }
-/*
-@media(max-width: 1030px) {
-    .timeline::after {
-        margin-left: -12px;
-    }
-}*/
 
 @media(min-width: 983px) and (max-width: 1030px) {
     .experience .fa-briefcase {
@@ -328,16 +352,6 @@
         left: unset;
         right: 0;
         margin-top: 36px;
-    }
-    .experience .aditional-info>* {
-        display: block;
-        margin-top: 8px;
-    }
-    .experience .aditional-info .location i {
-        margin-right: 12px;
-    }
-    .experience .aditional-info .separator {
-        display: none;
     }
     .timeline {
         margin-left: 0;

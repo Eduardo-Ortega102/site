@@ -10,8 +10,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" href="/css/3.7.2.animate.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/solid.min.css">
@@ -368,7 +368,6 @@
                                 </p>
                                 <span class='aditional-info'>
                                     <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran Canaria</span>
-                                    <span class='separator'>|</span>
                                     <span>
                                         <i class="fas fa-external-link-alt"></i>
                                         <a href='https://www.idecnet.com/' target='_blank' rel='noopener noreferrer'>
@@ -394,7 +393,6 @@
                                 </p>
                                 <span class='aditional-info'>
                                     <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran Canaria</span>
-                                    <span class='separator'>|</span>
                                     <span>
                                         <i class="fas fa-external-link-alt"></i>
                                         <a href='https://fpct.ulpgc.es/es/' target='_blank' rel='noopener noreferrer'>
@@ -420,7 +418,6 @@
                                 </p>
                                 <span class='aditional-info'>
                                     <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran Canaria</span>
-                                    <span class='separator'>|</span>
                                     <span>
                                         <i class="fas fa-external-link-alt"></i>
                                         <a href='https://www.aidacanarias.com/' target='_blank' rel='noopener noreferrer'>
@@ -446,7 +443,6 @@
                                 </p>
                                 <span class='aditional-info'>
                                     <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran Canaria</span>
-                                    <span class='separator'>|</span>
                                     <span>
                                         <i class="fas fa-external-link-alt"></i>
                                         <a href='https://www.proexca.es/splashpage' target='_blank' rel='noopener noreferrer'>
@@ -460,6 +456,7 @@
                     <div class='paragraph small'>
                         <p class='paragraph-body'>If you want a PDF version of my CV, you can download it by clicking this button.</p>
                         <button class="action-button no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
+                            <i class="fas fa-download"></i>
                             Curriculum
                         </button>
                     </div>
@@ -478,10 +475,10 @@
                         <div id='email'>
                             <div id="email-speech-bubble" class="speech-bubble">Copied!</div>
                             <input id="email-address" type="text" value="eduardo.ortega1002@gmail.com" readOnly="true"/>
-                            <button class="action-button" onclick="copyToClipBoard('email-address', 'email-speech-bubble')">COPY TO CLIPBOARD</button>
+                            <button class="action-button" onclick="copyToClipBoard('email-address', 'email-speech-bubble')">copy to clipboard</button>
                         </div>
                     </div>
-                    <div class='map paragraph big'>
+                    <div class='map'>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1588160585017!5m2!1sen!2ses"
                             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

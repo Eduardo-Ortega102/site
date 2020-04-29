@@ -202,7 +202,7 @@ span {
     letter-spacing: 0.02em;
     margin-left: 6px;
     font-weight: 500;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica", "Arial", sans-serif;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
@@ -375,30 +375,44 @@ section .content {
     width: -webkit-fill-available;
     font-size: 1.2rem;
     position: relative;
-    margin-top: 20px;
+    margin-top: 26px;
+    margin-bottom: 26px;
 }
 
 .action-button {
-    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
     display: block;
-    color: white;
-    background-color: #22A39F;
-    margin-top: 0.5vh;
+    color: #22A39F;
+    background-color: inherit;
+    margin-top: 6px;
     padding: 9px 0;
-    border: none;
+    border: 1px solid #22A39F;
     border-radius: 0.5vh;
     line-height: 1.5em;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    align-self: center;
 }
 
 .action-button:hover {
     cursor: pointer;
+    color: white;
+    background-color: #22A39F;
+}
+
+.paragraph .action-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email .action-button {
+    width: 100%;
 }
 
 .section-title {
@@ -408,10 +422,10 @@ section .content {
 .section-title h2 {
     display: inline-block;
     font-family: "Roboto Slab", serif;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     font-weight: 100;
-    padding: 10px 0;
-    margin: 0 0 20px 0;
+    padding: 10px;
+    margin: 0 0 48px 0;
     text-align: center;
     border-bottom: solid 1px #ccc;
     border-top: solid 1px #ccc;
@@ -436,11 +450,11 @@ section .content {
 
 .paragraph-title {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 24px;
 }
 
 .paragraph-body {
-    font-size: 1rem;
+    font-size: 16px;
     margin: 18px 0;
 }
 
@@ -771,6 +785,10 @@ section .content {
     text-align: center;
 }
 
+.project .paragraph-body {
+    font-size: 16px;
+}
+
 .project p {
     margin: 0;
 }
@@ -780,13 +798,16 @@ section .content {
 }
 
 .filter-button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    min-width: 48px;
     display: inline-block;
     color: #22A39F;
     border: none;
     border-bottom: solid 1px #22A39F;
     border-top: solid 1px #22A39F;
     padding: 8px;
-    margin: 16px;
+    margin: 20px;
     background: none;
     cursor: pointer;
     outline: none;
@@ -904,16 +925,22 @@ section .content {
     margin-right: 6px;
 }
 
-.experience .aditional-info .separator {
-    color: #BCBCBC;
-}
-
 .experience .aditional-info a {
     color: inherit;
     text-decoration: none;
 }
 
+.experience .aditional-info>* {
+    display: block;
+    margin-top: 8px;
+}
+
+.experience .aditional-info .location i {
+    margin-right: 12px;
+}
+
 .map, .map iframe {
+    max-width: 450px;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
