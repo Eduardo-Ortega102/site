@@ -836,6 +836,7 @@ section .content {
 
 .company {
     width: 160px;
+    min-width: 160px;
     background-color: #22A39F;
     color: white;
     padding: 14px 24px;
