@@ -97,6 +97,7 @@
 }
 
 /*NAVIGATION BAR RESPONSIVE*/
+
 @media (max-width: 750px) {
     .main-buttons {
         width: 100%;
@@ -117,32 +118,78 @@
         background-color: #e4e4e4;
         border-radius: 4px;
     }
-    .navigation-bar.responsive .navigation-link, 
-    .navigation-bar.responsive .dropdown {
+    .navigation-bar.responsive .navigation-link, .navigation-bar.responsive .dropdown {
         padding-left: 16px;
         padding-right: 16px;
     }
     .navigation-bar.responsive .dropdown a {
-        padding-left:  32px;
+        padding-left: 32px;
         padding-right: 32px;
     }
-    .navigation-bar.responsive .navigation-content, 
-    .navigation-bar.responsive .navigation-buttons, 
-    .navigation-bar.responsive .dropdown, 
-    .navigation-bar.responsive a:not(.icon):not(.brand) {
+    .navigation-bar.responsive .navigation-content, .navigation-bar.responsive .navigation-buttons, .navigation-bar.responsive .dropdown, .navigation-bar.responsive a:not(.icon):not(.brand) {
         display: block !important;
         text-align: left;
         width: 100%;
         max-width: unset;
         background-color: #222;
     }
-
     .navigation-bar.responsive .horizontal-bar {
         background-color: #222;
     }
-
     .navigation-bar.responsive .dropdown-content {
         width: 100%;
         left: 0;
+    }
+}
+
+@media(max-width: 850px) {
+    .experience {
+        flex-direction: column;
+        width: fit-content;
+    }
+    .company {
+        margin-right: 0px;
+        margin-bottom: 18px;
+        max-width: 500px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+    .experience .description::after {
+        right: auto;
+        border-right-color: transparent;
+        border-bottom-color: #f3f3f3;
+        top: -20px;
+    }
+    .experience .description {
+        margin-left: 0;
+    }
+    .timeline::after {
+        display: none;
+    }
+    .experience .fa-briefcase {
+        left: unset;
+        right: 0;
+        margin-top: 36px;
+    }
+    .experience .aditional-info>* {
+        display: block;
+        margin-top: 8px;
+    }
+    .experience .aditional-info .location i {
+        margin-right: 12px;
+    }
+    .experience .aditional-info .separator {
+        display: none;
+    }
+    .timeline {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 750px) {
+    .experience .fa-briefcase {
+        margin-right: 0;
     }
 }

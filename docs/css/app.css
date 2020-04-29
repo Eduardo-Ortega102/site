@@ -874,6 +874,7 @@ section .content {
     margin-left: 60px;
     padding: 24px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .experience .description::after {
