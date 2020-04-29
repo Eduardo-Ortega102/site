@@ -365,7 +365,7 @@ section .content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
 }
 
@@ -890,7 +890,7 @@ section .content {
     top: 10px;
 }
 
-.experience .paragraph-title {
+.experience .paragraph-title, #contact .paragraph-title {
     margin-top: 0;
 }
 
@@ -911,4 +911,9 @@ section .content {
 .experience .aditional-info a {
     color: inherit;
     text-decoration: none;
+}
+
+.map, .map iframe {
+    width: 100%;
+    height: 200px;
 }
