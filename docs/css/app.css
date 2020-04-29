@@ -674,18 +674,18 @@ section .content {
     font-weight: bold;
 }
 
-.project-wrapper button:focus, .project-wrapper button.active {
+.project-wrapper button:hover, .project-wrapper button:focus, .project-wrapper button.active {
     background-color: black;
     color: white;
     outline: none;
 }
 
-.project-wrapper button:focus {
-    transform: scale(1.03);
-}
-
 .project-wrapper button:hover {
     cursor: pointer;
+}
+
+.project-wrapper button:focus {
+    transform: scale(1.03);
 }
 
 .project {
