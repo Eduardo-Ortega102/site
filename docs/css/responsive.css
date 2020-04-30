@@ -75,9 +75,6 @@
         padding: 8px;
         max-width: 682px;
     }
-    .link.manifiesto {
-        font-size: 1.01em;
-    }
 }
 
 @media(min-width: 700px) and (max-width: 870px) {
@@ -95,22 +92,7 @@
     }
 }
 
-@media (max-width: 700px) {
-    .language-menu {
-        font-size: 1.2rem;
-        padding-right: 30px;
-    }
-}
-
 @media (max-width: 500px) {
-    .language-menu {
-        font-size: 1rem;
-        padding-right: 0px;
-        justify-content: space-around;
-    }
-    .language-menu a {
-        margin-left: 0px !important;
-    }
     .link.button.curriculum {
         padding: 6px 10px;
         font-size: 1.6rem;
@@ -127,7 +109,9 @@
     }
 }
 
-/*NAVIGATION BAR RESPONSIVE*/
+/*
+**  NAVIGATION BAR RESPONSIVE
+*/
 
 @media (max-width: 750px) {
     .main-buttons {
