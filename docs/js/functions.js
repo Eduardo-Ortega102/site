@@ -30,10 +30,12 @@ function mouseDown(id, event) {
 
 function copyToClipBoard(elementId, reporterId) {
     var element = document.getElementById(elementId);
-    element.select();
+    var textArea = document.createElement('textarea');
+    textArea.value = element.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
     document.execCommand('copy');
-    element.selectionEnd = element.selectionStart;
-    element.blur();
+    textArea.remove();
 
     var reporterElement = document.getElementById(reporterId);
     reporterElement.style.opacity = 1;

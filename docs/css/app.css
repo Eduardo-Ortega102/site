@@ -209,23 +209,6 @@ span {
     background-color: rgba(9, 30, 66, 0.10);
 }
 
-#email-address {
-    text-decoration: none;
-    border-color: rgb(207, 208, 212);
-    border-radius: 0.5vh;
-    border-style: solid;
-    padding: 8px 6px;
-    font-size: 1rem;
-    line-height: 1.5em;
-    color: rgb(9, 30, 66);
-    text-align: center;
-    width: fill-available;
-    /* WebKit-based browsers will ignore this. */
-    width: -moz-available;
-    /* Mozilla-based browsers will ignore this. */
-    width: -webkit-fill-available;
-}
-
 .speech-bubble {
     position: absolute;
     background: #191919;
@@ -374,7 +357,7 @@ section .content {
     width: -webkit-fill-available;
     font-size: 1.2rem;
     position: relative;
-    margin-top: 26px;
+    margin-top: 40px;
     margin-bottom: 26px;
 }
 
@@ -408,10 +391,6 @@ section .content {
 .paragraph .action-button {
     margin-left: auto;
     margin-right: auto;
-}
-
-#email .action-button {
-    width: 100%;
 }
 
 .section-title {
@@ -942,4 +921,87 @@ section .content {
     max-width: 450px;
     width: 100%;
     height: 250px;
+}
+
+#email .action-button {
+    width: 100%;
+    position: relative;
+    -webkit-transition: all 0.25s ease-in-out 0.1s;
+    transition: all 0.25s ease-in-out 0.1s;
+}
+
+#email .action-button span {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 9px 0;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    text-transform: lowercase;
+    opacity: 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+}
+
+#email .action-button::after {
+    content: 'Available for work';
+    position: absolute;
+    left: 11px;
+    margin-top: -28px;
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+
+#email .action-button.es::after {
+    content: 'Disponible para trabajar';
+}
+
+#email .action-button:hover::after {
+    content: 'Click to copy!';
+    color: white;
+    left: 24px;
+}
+
+#email .action-button.es:hover::after {
+    content: '¡Haz Click para copiar!';
+    left: 20px;
+}
+
+#email .action-button::before {
+    content: '';
+    width: 112px;
+    height: 17px;
+    padding: 4px;
+    position: absolute;
+    left: 0;
+    margin-top: -26px;
+    border: 2px solid #EE283E;
+    background-color: #f3efe0;
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#email .action-button.es::before {
+    width: 145px;
+}
+
+#email .action-button:hover::before {
+    background-color: #EE283E;
+}
+
+#email .action-button:hover {
+    color: #22A39F;
+    border-radius: 50px;
+    -webkit-transition: all 0.25s ease-in-out 0.1s;
+    transition: all 0.25s ease-in-out 0.1s;
+}
+
+#email .action-button:hover span {
+    opacity: 1;
+    -webkit-transition: all 0.25s ease-in-out 0.1s;
+    transition: all 0.25s ease-in-out 0.1s;
 }
