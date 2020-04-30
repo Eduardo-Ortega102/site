@@ -92,6 +92,12 @@
     }
 }
 
+@media (max-width: 660px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 500px) {
     .link.button.curriculum {
         padding: 6px 10px;
