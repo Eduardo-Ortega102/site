@@ -480,6 +480,10 @@ section .content {
     margin: 18px 0;
 }
 
+.paragraph-body li {
+    margin-top: 6px;
+}
+
 #stack, #contact {
     /*background-color: #f5f5f5;*/
     background-color: #F3EFE0;
@@ -984,10 +988,15 @@ section .content {
 .experience .description {
     background-color: #f3f3f3;
     margin-left: 60px;
-    padding: 24px;
+    padding: 14px 24px;
+    width: 100%;
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.experience .description.paragraph.big {
+    max-width: 600px;
 }
 
 .experience .description::after {
@@ -1010,6 +1019,7 @@ section .content {
     display: block;
     color: #22A39F;
     font-size: 15px;
+    margin-top: 6px;
 }
 
 .experience .aditional-info * {
