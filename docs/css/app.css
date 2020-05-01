@@ -71,7 +71,7 @@ body {
 ** style to prevent unsuported browsers
 */
 
-@supports (justify-content: space-evenly) and (display: flex) {
+@supports (justify-content: space-around) and (display: flex) {
     .browser-unsuported {
         display: none;
     }
@@ -139,9 +139,9 @@ span {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
 }
 
 .title {
@@ -255,9 +255,9 @@ span {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
     width: 50%;
     min-width: 200px;
     padding: 12px;
@@ -473,9 +473,9 @@ section .content {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
 }
 
 #email {
@@ -589,9 +589,9 @@ section .content {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -666,9 +666,9 @@ section .content {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
     margin-bottom: 30px;
 }
 
@@ -766,7 +766,7 @@ section .content {
 
 .dropdown:hover {
     cursor: pointer;
-    background-color: #22A39F;
+    background-color: #22A39F !important;
     color: white;
 }
 
