@@ -1,5 +1,91 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+/* 
+** START:
+** style to prevent unsuported browsers
+*/
+
+.browser-unsuported {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    z-index: 500000;
+}
+
+.browser-unsuported .banner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.browser-unsuported .english, .browser-unsuported .spanish {
+    margin: auto;
+    padding: 16px 8px;
+    width: 600px;
+}
+
+.browser-unsuported .spanish {
+    clear: both;
+}
+
+.browser-unsuported p {
+    font-size: 15px;
+}
+
+.browser-unsuported .browser {
+    float: left;
+    margin: 8px;
+    text-align: center;
+    width: 130px;
+}
+
+.browser-unsuported img {
+    width: 70px;
+}
+
+.browser-unsuported .browser h2 {
+    color: white;
+    text-transform: uppercase;
+    background-color: #908f8f;
+    padding: 8px 0;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+}
+
+body {
+    background-color: black;
+}
+
+#main-content, .footer, #navigation-bar, #main-header {
+    display: none !important;
+}
+
+/* 
+** END:
+** style to prevent unsuported browsers
+*/
+
+@supports (justify-content: space-evenly) and (display: flex) {
+    .browser-unsuported {
+        display: none;
+    }
+    #main-content, #navigation-bar, #main-header {
+        display: block !important;
+    }
+    .footer {
+        display: flex !important;
+    }
+    body {
+        background-color: white;
+    }
+}
+
 html, body {
     min-width: 300px;
     width: 100%;
