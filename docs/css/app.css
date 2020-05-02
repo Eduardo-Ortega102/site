@@ -830,7 +830,7 @@ section .content {
 
 .project-wrapper button {
     background-color: inherit;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 6px;
     width: 50%;
     margin-top: 6px;
