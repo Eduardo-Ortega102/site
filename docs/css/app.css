@@ -673,6 +673,7 @@ section .content {
 }
 
 .cornerstone {
+    position: relative;
     height: 153px;
     max-width: 96px;
     text-align: center;
@@ -683,6 +684,17 @@ section .content {
     font-weight: bold;
     color: inherit;
     margin: 8px;
+    text-decoration: none;
+}
+
+.cornerstone .fa-external-link-alt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    background-color: #22A39F;
+    color: white;
+    padding: 6px;
 }
 
 .cornerstone img {
@@ -690,6 +702,7 @@ section .content {
     display: block;
     margin-bottom: 6px;
     border-radius: inherit;
+    background-color: #ddd;
 }
 
 .navigation-bar {
