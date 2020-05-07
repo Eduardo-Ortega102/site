@@ -26,7 +26,7 @@
 .browser-unsuported .english, .browser-unsuported .spanish {
     margin: auto;
     padding: 16px 8px;
-    width: 600px;
+    width: 750px;
 }
 
 .browser-unsuported .spanish {
@@ -45,7 +45,7 @@
 }
 
 .browser-unsuported img {
-    width: 70px;
+    width: 64px;
 }
 
 .browser-unsuported .browser h2 {
