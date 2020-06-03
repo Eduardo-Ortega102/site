@@ -9,7 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" href="/css/3.7.2.animate.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="/css/fontawesome/css/solid.min.css">
@@ -36,45 +38,116 @@
 
 
 	Hi there! I'm glad that you are taking a look at the source code of this page!
-	If you are interested in the code, go ahead and check it out at https://github.com/Eduardo-Ortega102/site
   -->
-    <header class="main-header">
-        <div class="content-background">
-            <div class="content">
-                <div class="language-menu">
-                    <a class="language-option current-language" onclick="changeLanguage('es')">ESPAÑOL</a>
-                    <a class="language-option" onclick="changeLanguage('en')">ENGLISH</a>
+    <div class='browser-unsuported'>
+        <div class='banner'>
+            <div class='english'>
+                <h1>Oops! There is a problem!</h1>
+                <p>
+                    You are using an outdated browser.
+                    Please upgrade your browser to view this website.
+                </p>
+                <p><strong>If you are using Internet Explorer, switch to another browser.</strong></p>
+                <p>You can use, for example, any of these:</p>
+                <div class='browser-container'>
+                    <div class='browser'>
+                        <img src='/img/chrome.png' alt='chrome'>
+                        <h2>GOOGLE CHROME</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/firefox.png' alt='firefox'>
+                        <h2>MOZILLA FIREFOX</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/safari.png' alt='safari'>
+                        <h2>SAFARI</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/opera.png' alt='opera'>
+                        <h2>OPERA</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/edge.png' alt='edge'>
+                        <h2>MICROSOFT EDGE</h2>
+                    </div>
                 </div>
+            </div>
+            <div class='spanish'>
+                <h1>¡Vaya! ¡Hay un problema!</h1>
+                <p>
+                    Est&aacute;s usando un navegador anticuado.
+                    Por favor, actualiza tu navegador para ver &eacute;sta web.
+                </p>
+                <p>Si est&aacute;s usando Internet Explorer, cambia de navegador.</p>
+                <p>Puedes usar, por ejemplo, cualquiera de estos:</p>
+                <div class='browser-container'>
+                    <div class='browser'>
+                        <img src='/img/chrome.png' alt='chrome'>
+                        <h2>GOOGLE CHROME</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/firefox.png' alt='firefox'>
+                        <h2>MOZILLA FIREFOX</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/safari.png' alt='safari'>
+                        <h2>SAFARI</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/opera.png' alt='opera'>
+                        <h2>OPERA</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/edge.png' alt='edge'>
+                        <h2>MICROSOFT EDGE</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id='navigation-bar' class='navigation-bar'>
+        <div class='content-wrapper'>
+            <div class='navigation-content'>
+                <div class='main-buttons'>
+                    <a class='brand navigation-link' onclick="scrollToElement('main-header')">Inicio</a>
+                    <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+                        <div class='mobile-menu'>
+                            <div class='horizontal-bar'></div>
+                            <div class='horizontal-bar margin'></div>
+                            <div class='horizontal-bar'></div>
+                        </div>
+                    </a>
+                </div>
+                <div class='navigation-buttons'>
+                    <a class='navigation-link' onclick="scrollToElement('about-me')">Sobre m&iacute;</a>
+                    <a class='navigation-link' onclick="scrollToElement('stack')">Tecnolog&iacute;as</a>
+                    <a class='navigation-link' onclick="scrollToElement('projects')">Proyectos</a>
+                    <a class='navigation-link' onclick="scrollToElement('experience')">Experiencia</a>
+                    <a class='navigation-link' onclick="scrollToElement('contact')">Contacto</a>
+                    <div class="dropdown" onclick="openLanguageMenu()">
+                        Idioma
+                        <i class="fa fa-caret-down"></i>
+                        <div id="languageDropdown" class="dropdown-content">
+                            <a onclick="changeLanguage('es')" class='current-language'>Español</a>
+                            <a onclick="changeLanguage('en')">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header id='main-header' class="main-header">
+        <div class="content-background">
+            <div class="content-wrapper">
                 <h1 class="title">Eduardo Ortega Naranjo</h1>
                 <p class="subtitle">
                     Estudiante de Ingenier&iacute;a del Software &nbsp;&bull;&nbsp; Aprendizaje constante
                 </p>
                 <div class="links-bar">
                     <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
-                    <a class="link button" href="https://bitbucket.org/Eduardo-Ortega102/"><i class="fab fa-bitbucket"></i></a>
                     <a class="link button" href="https://es.linkedin.com/in/eortegan/es/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
-                    <button class="link button no-focus" onclick="openModal('contact-dialog')" onmousedown="mouseDown('contact-dialog', event)">
-                        <i class="fas fa-envelope"></i>
-                    </button>
-                    <div id="contact-dialog" class="modal-dialog">
-                        <div class="modal-window">
-                            <h2 class="modal-title">Email</h2>
-                            <div class="modal-content">
-                                <div id="email-speech-bubble" class="speech-bubble">&iexcl;Copiado!</div>
-                                <input id="email-address" type="text" value="eduardo.ortega1002@gmail.com" readOnly="true"/>
-                            </div>
-                            <div class="modal-actions">
-                                <button onclick="closeModal('contact-dialog')">cerrar</button>
-                                <button onclick="copyToClipBoard('email-address', 'email-speech-bubble')">copiar</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <button class="link button curriculum no-focus" onclick="openModal('curriculum-dialog')" onmousedown="mouseDown('curriculum-dialog', event)">
-                    <i class="fas fa-file-pdf"></i>
-                    <span> Curriculum </span>
-                </button>
                 <div id="curriculum-dialog" class="modal-dialog">
                     <div class="modal-window">
                         <h2 class="modal-title">Curriculum Vitae</h2>
@@ -94,12 +167,503 @@
                     </div>
                 </div>
             </div>
-            <div class="header-footer">
-                <a class="link manifiesto" href="https://agilemanifesto.org/iso/es/manifesto.html" target="_blank" rel="noopener noreferrer">Manifiesto por el Desarrollo &Aacute;gil de Software</a>
-                <a class="link manifiesto" href="https://manifesto.softwarecraftsmanship.org/#/es" target="_blank" rel="noopener noreferrer">Manifesto por la Artesan&iacute;a del Software</a>
-            </div>
+            <a id='scrolldown-button' class='fas fa-angle-down' onclick="scrollToElement('main-content')"></a>
         </div>
     </header>
+    <div id='main-content'>
+        <section id='about-me'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Sobre m&iacute;</h2>
+                </div>
+                <div class='content'>
+                    <div class='paragraph big'>
+                        <img class='avatar' alt='avatar' src='/img/avatar.jpeg'>
+                        <p class='paragraph-title'>Descripci&oacute;n</p>
+                        <p class='paragraph-body'>
+                            Desarrollador de Software en constante aprendizaje, estudiante de ingenier&iacute;a inform&aacute;tica en la Universidad de Las
+                            Palmas de Gran Canaria y t&eacute;cnico superior en administraci&oacute;n de sistemas en red.
+                        </p>
+                        <p class='paragraph-body'>
+                            Me gusta trabajar en equipos donde prima la comunicaci&oacute;n y la colaboraci&oacute;n, 
+                            creo que es necesario que todo el mundo est&eacute; involucrado para obtener el mejor resultado posible.
+                            Tengo presentes los principios "Don't Make Me Think" y "Clean Code" en todo momento a la hora de desarrollar
+                            interfaces de usuario y programar.
+                        </p>
+                    </div>
+                    <div class='paragraph big'>
+                        <p class='paragraph-title'>Mis Piedras Angulares</p>
+                        <p class='paragraph-body'>
+                            No considero que exista una sola forma de trabajar, soy consciente de que proyectos diferentes pueden necesitar
+                            m&eacute;todos diferentes. Dicho esto, tambi&eacute;n encuentro que los siguientes principios y pr&aacute;cticas son de gran utilidad
+                            e intento seguirlos en mi d&iacute;a a d&iacute;a lo mejor que puedo.
+                        </p>
+                        <div class='cornerstone-container'>
+                            <a class='cornerstone' href="https://agilemanifesto.org/iso/es/manifesto.html" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                <img alt='agile' src='/img/agile.png'> 
+                                Manifiesto por el Desarrollo &Aacute;gil de Software
+                            </a>
+                            <a class='cornerstone' href="https://manifesto.softwarecraftsmanship.org/#/es" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                <img alt='craftsman' src='/img/craftsman.jpg'> 
+                                Manifesto por la Artesan&iacute;a del Software
+                            </a>
+                            <a class='cornerstone' href="https://keepachangelog.com/es-ES/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                <img alt='changelog' src='/img/changelog2.jpg'> 
+                                Mant&eacute;n un Changelog
+                            </a>
+                        </div>
+                        <p class='paragraph-title'>Idiomas (Marco Europeo de Referencia)</p>
+                        <div id='human-languages'>
+                            <div class="progress-bar">
+                                <span>Espa&ntilde;ol</span>
+                                <div class="progress-bar-background">
+                                    <div id='spanish-bar' class='progress-bar-foreground'>Nativo</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>Ingl&eacute;s</span>
+                                <div class="progress-bar-background">
+                                    <div id='english-bar' class='progress-bar-foreground'>B2</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>Alem&aacute;n</span>
+                                <div class="progress-bar-background">
+                                    <div id='german-bar' class='progress-bar-foreground'>A2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='stack'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Tecnolog&iacute;as y herramientas</h2>
+                </div>
+                <div class='content'>
+                    <div class='paragraph small'>
+                        <p class='paragraph-body'>
+                            Aqu&iacute; enumero las tecnolog&iacute;as y herramientas con las que estoy m&aacute;s familiarizado. 
+                            Creo que siempre hay espacio para el aprendizaje y la mejora, por lo tanto, espero que esta lista siga creciendo.
+                        </p>
+                    </div>
+                    <div class="stack-container">
+                        <img class='stack-image' alt='java' src='/img/java.png'>
+                        <img class='stack-image' alt='csharp' src='/img/csharp.png'>
+                        <img class='stack-image' alt='html' src='/img/html.png'>
+                        <img class='stack-image' alt='css3' src='/img/css3.png'>
+                        <img class='stack-image' alt='javascript' src='/img/javascript.png'>
+                        <img class='stack-image' alt='sql' src='/img/sql.png'>
+                        <img class='stack-image' alt='python' src='/img/python.png'>
+                    </div>
+                    <div class="stack-container">
+                        <img class='stack-image' alt='keras' src='/img/keras.png'>
+                        <img class='stack-image' alt='git' src='/img/git.png'>
+                        <img class='stack-image' alt='docker' src='/img/docker.png'>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='projects'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Proyectos P&uacute;blicos</h2>
+                </div>
+                <div class='content buttons'>
+                    <button id='all' class='filter-button active' onclick='filterProjects(this.id)'>Todos</button>
+                    <button id='real' class='filter-button' onclick='filterProjects(this.id)'>Profesionales</button>
+                    <button id='personal' class='filter-button' onclick='filterProjects(this.id)'>Personales</button>
+                </div>
+                <div class='content'>
+                    <div class='project-wrapper' data-categories='["web", "personal"]'>
+                        <div id='personal-website' class='project'>
+                            <div class='image-container'>
+                                <img alt='personal site' src='/img/personal-site2.png'>
+                            </div>
+                            <div class='overlay'>
+                                <p class='paragraph-title'>Web Personal</p>
+                                <p class='paragraph-body'>
+                                    Mi p&aacute;gina web: presentaci&oacute;n profesional de un ingeniero de software.
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "personal-website")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='oceans' class='project'>
+                            <a href='http://www.oceanslaspalmas.es/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='oceans' src='/img/oceans.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Oceans</p>
+                                    <p class='paragraph-body'>
+                                        Portal del centro de est&eacute;tica Oceans. Se muestran los servicios, ofertas y datos de contacto de la empresa.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "oceans")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='visor-geoportal' class='project'>
+                            <a href='http://www.geoportal.ulpgc.es/visor2/?json=catalogo1.json#' target='_blank'
+                                rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='geoportal' src='/img/visor-geoportal.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                <p class='paragraph-title'>Visor Din&aacute;mico</p>
+                                    <p class='paragraph-body'>
+                                        Visor web interactivo de ECOAQUA, en el que se puede consultar informaci&oacute;n costera de Canarias.
+                                        Se pueden cargar configuraciones de mapas en bloque, eliminando la necesidad de introducir cada mapa por separado.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "visor-geoportal")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='servicios-ecoaqua' class='project'>
+                            <a href='http://www.geoportal.ulpgc.es/servicios/ecoaqua/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                <p class='paragraph-title'>Lista de Servicios</p>
+                                    <p class='paragraph-body'>
+                                        Portal en el que se enumera la informaci&oacute;n sobre los recursos costeros de Canarias que ofrece ECOAQUA
+                                        (datos en formato WMS, WFS, CSW, DWL).
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "servicios-ecoaqua")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='marsp' class='project'>
+                            <a href='http://www.geoportal.ulpgc.es/marsp/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='marsp' src='/img/marsp.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                    <p class='paragraph-title'>Marsp</p>
+                                    <p class='paragraph-body'>
+                                        Portal de la plataforma MarSP Canarias. El proyecto MarSP pretende reforzar los procesos de Ordenaci&oacute;n del Espacio
+                                        Mar&iacute;timo (OEM) en los tres archipi&eacute;lagos macaronesios de la UE.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "marsp")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='lanzarote' class='project'>
+                            <a href='http://www.idelanzarote.com/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='lanzarote' src='/img/lanzarote.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                <p class='paragraph-title'>Visor de Mapas</p>
+                                    <p class='paragraph-body'>
+                                        Visor web interactivo en el que se pueden consultar los mapas de la Infraestructura de Datos Espaciales de Lanzarote.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "lanzarote")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='servicios-lanzarote' class='project'>
+                            <a href='http://servicios.idelanzarote.com/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                <p class='paragraph-title'>Lista de Servicios</p>
+                                    <p class='paragraph-body'>
+                                        Portal en el que se enumera la informaci&oacute;n geogr&aacute;fica que ofrece la Infraestructura de Datos Espaciales de Lanzarote
+                                        (mapas en formato WMS).
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "servicios-lanzarote")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "personal"]'>
+                        <div id='runbots' class='project'>
+                            <a href='https://eduardoortega102.itch.io/runbots' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='runbots' src='/img/runbots.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                <p class='paragraph-title'>Runbots</p>
+                                    <p class='paragraph-body'>
+                                        Videojuego para un jugador desarrollado durante la competici&oacute;n Ludum Dare 35, con el tema "Cambio de forma".
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "runbots")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project-wrapper' data-categories='["web", "personal"]'>
+                        <div id='pushfirst' class='project'>
+                            <a href='https://pushfirstteam.itch.io/push-first' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='pushfirst' src='/img/pushfirst.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay'>
+                                <p class='paragraph-title'>push first</p>
+                                    <p class='paragraph-body'>
+                                        Videojuego para dos jugadores desarrollado durante la competici&oacute;n Ludum Dare 34, con los temas "Controles de
+                                        dos Botones" o "Crecimiento".
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <button onclick='displayProjectInfo(this, "pushfirst")'>Leer m&aacute;s</button>
+                    </div>
+                    <div class='project dummy'></div>
+                    <div class='project dummy'></div>
+                </div>
+            </div>
+        </section>
+        <section id='experience'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Experiencia</h2>
+                </div>
+                <div class='content'>
+                    <div class='timeline'>
+                        <div class='experience'>
+                            <div class='company'>
+                                <span class='name'>IDECNET</span>
+                                <span class='date'>Dic. 2015 - Ene. 2020</span>
+                            </div>
+                            <i class="fas fa-briefcase"></i>
+                            <div class='description paragraph big'>
+                                <p class='paragraph-title'>
+                                    T&eacute;cnico de Soporte Inform&aacute;tico
+                                </p>
+                                <p class='paragraph-body'>
+                                    IdecNet es una compa&ntilde;&iacute;a de telecomunicaciones que proporciona servicios de
+                                    internet e IP en general
+                                    (DNS, VPN, ADSL, FTTH, etc.), servicio telef&oacute;nico fijo (VoIP)
+                                    y administraci&oacute;n de sistemas (dispone de su propio centro de datos y plataforma de
+                                    virtualizaci&oacute;n).
+                                </p>
+                                <p class='paragraph-body'>
+                                    Las funciones que realic&eacute; durante mi estancia fueron:
+                                </p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>Soporte T&eacute;cnico</li>
+                                        <li>Administraci&oacute;n de Sistemas (Linux, UNIX, Cisco)</li>
+                                        <li>Formaci&oacute;n de nuevos miembros del equipo</li>
+                                    </ul>
+                                </div>
+                                <span class='aditional-info'>
+                                    <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran
+                                        Canaria</span>
+                                    <span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <a href='https://www.idecnet.com/' target='_blank' rel='noopener noreferrer'>
+                                            https://www.idecnet.com/
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class='experience'>
+                            <div class='company'>
+                                <span class='name'>FCPCT</span>
+                                <span class='date'>Jun. 2018 - Nov. 2019</span>
+                            </div>
+                            <i class="fas fa-briefcase"></i>
+                            <div class='description paragraph big'>
+                                <p class='paragraph-title'>
+                                    Desarrollador de Software
+                                </p>
+                                <p class='paragraph-body'>
+                                    La Fundaci&oacute;n Canaria Parque Cient&iacute;fico Tecnol&oacute;gico (FCPCT) 
+                                    tiene como objetivo la producci&oacute;n y gesti&oacute;n de la I+D+i, estimulando y
+                                    gestionando el flujo de conocimiento y
+                                    tecnolog&iacute;a entre la Universidad, instituciones de investigaci&oacute;n, empresas y
+                                    mercados.
+                                </p>
+                                <p class='paragraph-body'>
+                                    Estuve destinado en el Instituto Universitario de Microelectr&oacute;nica Aplicada (IUMA) y
+                                    las funciones que realic&eacute; durante mi estancia fueron:
+                                </p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>Desarrollo web con JavaScript, jQuery y PHP</li>
+                                        <li>Desarrollo de plugins para QGIS en Python</li>
+                                        <li>Gesti&oacute;n de bases de datos en PostgreSQL</li>
+                                        <li>Documentaci&oacute;n de proyectos</li>
+                                        <li>Asistencia t&eacute;cnica en un proyecto de investigaci&oacute;n</li>
+                                    </ul>
+                                </div>
+                                <span class='aditional-info'>
+                                    <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran
+                                        Canaria</span>
+                                    <span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <a href='https://fpct.ulpgc.es/es/' target='_blank' rel='noopener noreferrer'>
+                                            https://fpct.ulpgc.es/es/
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class='experience'>
+                            <div class='company'>
+                                <span class='name'>AIDA</span>
+                                <span class='date'>Sep. 2017 - Ene. 2018</span>
+                            </div>
+                            <i class="fas fa-briefcase"></i>
+                            <div class='description paragraph big'>
+                                <p class='paragraph-title'>
+                                    Desarrollador de Software (pr&aacute;cticas)
+                                </p>
+                                <p class='paragraph-body'>
+                                    Aplicaciones Inform&aacute;ticas Domingo Alonso (AIDA) es una empresa de servicios
+                                    tecnol&oacute;gicos y desarrollo de software,
+                                    especializada en el sector de la automoci&oacute;n (gesti&oacute;n de importaci&oacute;n de
+                                    veh&iacute;culos, cita previa para el taller, etc.),
+                                    que opera tanto a nivel nacional como internacional. Forma parte del Grupo Domingo Alonso.
+                                </p>
+                                <p class='paragraph-body'>
+                                    Las funciones que realic&eacute; durante mi estancia fueron:
+                                </p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>Desarrollo Backend con C#</li>
+                                        <li>Desarrollo Frontend con React.js y Vue.js</li>
+                                    </ul>
+                                </div>
+                                <span class='aditional-info'>
+                                    <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran
+                                        Canaria</span>
+                                    <span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <a href='https://www.aidacanarias.com/' target='_blank' rel='noopener noreferrer'>
+                                            https://www.aidacanarias.com/
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class='experience'>
+                            <div class='company'>
+                                <span class='name'>PROEXCA</span>
+                                <span class='date'>Abr. 2016 - Mayo 2016</span>
+                            </div>
+                            <i class="fas fa-briefcase"></i>
+                            <div class='description paragraph big'>
+                                <p class='paragraph-title'>
+                                    Programador (pr&aacute;cticas)
+                                </p>
+                                <p class='paragraph-body'>
+                                    PROEXCA es una empresa p&uacute;blica adscrita a la Consejer&iacute;a de Econom&iacute;a, Conocimiento y Empleo del Gobierno de Canarias
+                                    que tiene como objetivos fundamentales la internacionalizaci&oacute;n de la empresa canaria y la atracci&oacute;n hacia las islas
+                                    de inversiones estrat&eacute;gicas.
+                                </p>
+                                <p class='paragraph-body'>
+                                    Las funciones que realic&eacute; durante mi estancia fueron:
+                                </p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>Asistencia t&eacute;cnica en la instalaci&oacute;n de sistemas y aplicaciones</li>
+                                        <li>Programaci&oacute;n de aplicaciones de gesti&oacute;n con Visual Basic .NET</li>
+                                    </ul>
+                                </div>
+                                <span class='aditional-info'>
+                                    <span class='location'><i class="fas fa-map-marker-alt"></i>Las Palmas de Gran
+                                        Canaria</span>
+                                    <span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <a href='https://www.proexca.es/' target='_blank' rel='noopener noreferrer'>
+                                            https://www.proexca.es/
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='paragraph small'>
+                        <p class='paragraph-body'>Si quieres una versi&oacute;n en PDF de mi CV, puedes descargarla haciendo
+                            clic en el siguiente bot&oacute;n.</p>
+                        <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
+                            onmousedown="mouseDown('curriculum-dialog', event)">
+                            <i class="fas fa-download"></i>
+                            Curriculum
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='contact'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>Contacto</h2>
+                </div>
+                <div class='content'>
+                    <div class='paragraph small'>
+                        <p class='paragraph-title'>¡Hagamos algo asombroso!</p>
+                        <p class='paragraph-body'>
+                            No dudes en contactar conmigo. 
+                            Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades.
+                        </p>
+                        <p class='paragraph-body'>
+                            Haz clic en el siguiente bot&oacute;n para copiar mi email.
+                        </p>
+                        <div id='email'>
+                            <div id="email-speech-bubble" class="speech-bubble">¡Copiado!</div>
+                            <button class="action-button es" onclick="copyToClipBoard('email-address', 'email-speech-bubble')">
+                                contacto
+                                <i class="fas fa-paper-plane"></i>
+                                <span id='email-address'>eduardo.ortega1002@gmail.com</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class='map'>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1588160679022!5m2!1ses!2ses"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="media">
+            <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
+            <a class="link button" href="https://es.linkedin.com/in/eortegan/es/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class='copyright'>
+            <p>Copyright &copy; 2020 </p>
+            <p>Eduardo Ortega Naranjo</p>
+        </div>
+        <div>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </div>
 </body>
 
 </html>
