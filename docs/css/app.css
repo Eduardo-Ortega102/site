@@ -570,6 +570,76 @@ section .content {
     margin-top: 6px;
 }
 
+.referral {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f9f9;
+    padding: 24px 32px;
+    min-width: 200px;
+    max-width: 600px;
+    text-align: justify;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.referral .title {
+    font-size: 32px;
+    margin-top: 0px;
+    padding: 0px 24px 0px 0px;
+}
+
+.referral::before {
+    content: '';
+    width: 146px;
+    height: 17px;
+    padding: 4px;
+    position: absolute;
+    right: 8px;
+    top: -6px;
+    border: 2px solid #22a39f;
+    background-color: #22a39f;
+    -webkit-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+
+.referral::after {
+    content: 'Available on LinkedIn';
+    position: absolute;
+    right: 20px;
+    margin-top: -24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.referral.spanish::before {
+    width: 152px;
+}
+
+.referral.spanish::after {
+    content: 'Disponible en LinkedIn';
+}
+
+#fcpct-referral.spanish::before {
+    width: 196px;
+}
+
+#fcpct-referral.spanish::after {
+    content: 'Disponible en LinkedIn (Inglés)';
+    right: 16px;
+}
+
+.referrer {
+    color: #22A39F;
+    margin-bottom: 18px;
+}
+
+.referrer .paragraph-body {
+    margin: 0px;
+    text-align: left;
+}
+
 #stack, #contact {
     /*background-color: #f5f5f5;*/
     background-color: #F3EFE0;
@@ -777,6 +847,10 @@ section .content {
     min-width: 120px;
 }
 
+.navigation-buttons.spanish .dropdown {
+    min-width: 80px;
+}
+
 .dropdown:hover {
     cursor: pointer;
     background-color: #22A39F !important;
@@ -800,6 +874,10 @@ section .content {
     width: 112px;
     text-transform: uppercase;
     padding: 6px 12px;
+}
+
+.navigation-buttons.spanish .dropdown-content a {
+    width: 80px;
 }
 
 .show {
