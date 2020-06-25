@@ -98,6 +98,9 @@
 }
 
 @media (max-width: 660px) {
+    .referral {
+        flex-direction: column;
+    }
     .footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -127,7 +130,7 @@
 **  NAVIGATION BAR RESPONSIVE
 */
 
-@media (max-width: 750px) {
+@media (max-width: 845px) {
     .main-buttons {
         width: 100%;
     }
