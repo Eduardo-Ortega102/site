@@ -793,6 +793,7 @@ section .content {
     color: white;
     padding: 0 16px;
     width: calc(100% - 32px);
+    height: 56px;
     top: 0;
     right: 0;
     left: 0;
