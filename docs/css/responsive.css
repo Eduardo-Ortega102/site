@@ -218,7 +218,7 @@
 **  NAVIGATION BAR RESPONSIVE
 */
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
     .main-buttons {
         width: 100%;
     }

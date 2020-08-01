@@ -573,6 +573,7 @@ section .content {
 .carousel {
     margin: 26px 0px;
 }
+
 .slideshow-container {
     position: relative;
     margin: 0px;
@@ -931,10 +932,6 @@ section .content {
     min-width: 120px;
 }
 
-.navigation-buttons.spanish .dropdown {
-    min-width: 80px;
-}
-
 .dropdown:hover {
     cursor: pointer;
     background-color: #22A39F !important;
@@ -958,10 +955,6 @@ section .content {
     width: 112px;
     text-transform: uppercase;
     padding: 6px 12px;
-}
-
-.navigation-buttons.spanish .dropdown-content a {
-    width: 80px;
 }
 
 .show {
