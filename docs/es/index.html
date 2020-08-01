@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <script type="text/javascript" src="/js/functions.js"></script>
+    <script type="text/javascript" src="/js/carousel.js"></script>
 </head>
 
 <body>
@@ -659,52 +660,66 @@
                     <h2>Referencias</h2>
                 </div>
                 <div class='content'>
-                    <div class='referral spanish translated'>
-                        <p class='title'>
-                            <i class="fas fa-quote-left"></i>
-                        </p>
-                        <div>
-                            <p class='paragraph-body'>
-                                Eduardo trabaj&oacute; durante un a&ntilde;o y medio en el servicio de geoinform&aacute;tica y ciencia de datos
-                                de la Universidad de Las Palmas de G.C. Ha demostrado ser un desarrollador responsable y
-                                serio. Aprende r&aacute;pido, trabaja muy bien en equipo, tiene un buen car&aacute;cter, se mantiene
-                                tranquilo en situaciones dif&iacute;ciles y se ocupa de hacer su trabajo lo mejor posible. Se
-                                esfuerza por comprender el problema para encontrar la mejor soluci&oacute;n. 
-                                <br><br>
-                                Me alegro de haber trabajado con &eacute;l y lo recomiendo encarecidamente como desarrollador.
-                            </p>
-                            <div class='referrer'>
-                                <p class='paragraph-body '>
-                                    Pablo Fern&aacute;ndez Moniz
-                                </p>
-                                <p class='paragraph-body '>
-                                    Jefe del Servicio de Geoinform&aacute;tica y Ciencia de Datos, FCPCT (ULPGC)
-                                </p>
+                    <div class="carousel">
+                        <div class="slideshow-container">
+                            <div class="slide active">
+                                <div class='referral spanish translated'>
+                                    <p class='title'>
+                                        <i class="fas fa-quote-left"></i>
+                                    </p>
+                                    <div>
+                                        <p class='paragraph-body'>
+                                            Eduardo trabaj&oacute; durante un a&ntilde;o y medio en el servicio de geoinform&aacute;tica y ciencia de datos
+                                            de la Universidad de Las Palmas de G.C. Ha demostrado ser un desarrollador responsable y
+                                            serio. Aprende r&aacute;pido, trabaja muy bien en equipo, tiene un buen car&aacute;cter, se mantiene
+                                            tranquilo en situaciones dif&iacute;ciles y se ocupa de hacer su trabajo lo mejor posible. Se
+                                            esfuerza por comprender el problema para encontrar la mejor soluci&oacute;n. 
+                                            <br><br>
+                                            Me alegro de haber trabajado con &eacute;l y lo recomiendo encarecidamente como desarrollador.
+                                        </p>
+                                        <div class='referrer'>
+                                            <p class='paragraph-body '>
+                                                Pablo Fern&aacute;ndez Moniz
+                                            </p>
+                                            <p class='paragraph-body '>
+                                                Jefe del Servicio de Geoinform&aacute;tica y Ciencia de Datos, FCPCT (ULPGC)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="slide">
+                                <div class='referral spanish'>
+                                    <p class='title'>
+                                        <i class="fas fa-quote-left"></i>
+                                    </p>
+                                    <div>
+                                        <p class='paragraph-body'>
+                                            Eduardo ha trabajado bajo mi supervisi&oacute;n durante un periodo de 5 a&ntilde;os aproximadamente.
+                                            <br><br>
+                                            Me consta su responsabilidad y competencia en el trabajo desempe&ntilde;ado como t&eacute;cnico de sistemas.
+                                            Su paso por nuestra empresa se caracteriz&oacute; en todo momento por su profesionalidad, realizando trabajos de
+                                            mantenimiento preventivo y correctivo de equipos en producci&oacute;n.
+                                            <br><br>
+                                            Quedo disponible para contrastar cualquier dato referido a la presente recomendaci&oacute;n.
+                                        </p>
+                                        <div class='referrer'>
+                                            <p class='paragraph-body '>
+                                                Agust&iacute;n Pe&ntilde;a S&aacute;nchez
+                                            </p>
+                                            <p class='paragraph-body '>
+                                                Director del Departamento de Sistemas en Idecnet, S.A.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-prev" onclick="previousSlide()">&#10094;</a>
+                            <a class="carousel-next" onclick="nextSlide()">&#10095;</a>
                         </div>
-                    </div>
-                    <div class='referral spanish'>
-                        <p class='title'>
-                            <i class="fas fa-quote-left"></i>
-                        </p>
-                        <div>
-                            <p class='paragraph-body'>
-                                Eduardo ha trabajado bajo mi supervisi&oacute;n durante un periodo de 5 a&ntilde;os aproximadamente.
-                                <br><br>
-                                Me consta su responsabilidad y competencia en el trabajo desempe&ntilde;ado como t&eacute;cnico de sistemas.
-                                Su paso por nuestra empresa se caracteriz&oacute; en todo momento por su profesionalidad, realizando trabajos de
-                                mantenimiento preventivo y correctivo de equipos en producci&oacute;n.
-                                <br><br>
-                                Quedo disponible para contrastar cualquier dato referido a la presente recomendaci&oacute;n.
-                            </p>
-                            <div class='referrer'>
-                                <p class='paragraph-body '>
-                                    Agust&iacute;n Pe&ntilde;a S&aacute;nchez
-                                </p>
-                                <p class='paragraph-body '>
-                                    Director del Departamento de Sistemas en Idecnet, S.A.
-                                </p>
-                            </div>
+                        <div class="carousel-dot-container">
+                            <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+                            <span class="carousel-dot" onclick="currentSlide(1)"></span>
                         </div>
                     </div>
                 </div>
