@@ -647,7 +647,7 @@
                 <div class='content'>
                     <div class="carousel">
                         <div class="slideshow-container">
-                            <div class="slide active">
+                            <div class="slide animated fast active">
                                 <div class='referral english'>
                                     <p class='title'>
                                         <i class="fas fa-quote-left"></i>
@@ -675,7 +675,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slide">
+                            <div class="slide animated fast">
                                 <div class='referral english translated'>
                                     <p class='title'>
                                         <i class="fas fa-quote-left"></i>
@@ -701,12 +701,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-prev" onclick="previousSlide()">&#10094;</a>
-                            <a class="carousel-next" onclick="nextSlide()">&#10095;</a>
+                            <a class="carousel-prev" onclick="carousel.showPreviousSlide()">&#10094;</a>
+                            <a class="carousel-next" onclick="carousel.showNextSlide()">&#10095;</a>
                         </div>
                         <div class="carousel-dot-container">
-                            <span class="carousel-dot active" onclick="currentSlide(0)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                            <span class="carousel-dot active" onclick="carousel.setCurrentSlide(0)"></span>
+                            <span class="carousel-dot" onclick="carousel.setCurrentSlide(1)"></span>
                         </div>
                     </div>
                 </div>
