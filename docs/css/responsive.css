@@ -100,12 +100,100 @@
 @media (max-width: 660px) {
     .referral {
         flex-direction: column;
+        padding-left: 48px;
+    }
+    .carousel-prev, .carousel-next {
+        font-size: 16px;
     }
     .footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 615px) {
+    .referral {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .referral {
+        min-height: 380px;
+    }
+    .referral.spanish {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 592px) {
+    .referral {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 510px) {
+    .referral {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 475px) {
+    .referral.spanish {
+        min-height: 460px;
+    }
+}
+
+@media (max-width: 450px) {
+    .referral {
+        min-height: 440px;
+    }
+}
+
+@media (max-width: 440px) {
+    .referral {
+        min-height: 460px;
+    }
+    .referral.spanish {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 410px) {
+    .referral {
+        min-height: 480px;
+    }
+}
+
+@media (max-width: 390px) {
+    .referral {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 385px) {
+    .referral {
+        min-height: 520px;
+    }
+    .referral.spanish {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 370px) {
+    .referral {
+        min-height: 540px;
+    }
+}
+
+@media (max-width: 360px) {
+    .referral {
+        min-height: 578px;
+    }
+    .referral.spanish {
+        min-height: 620px;
     }
 }
 
