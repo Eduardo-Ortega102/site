@@ -905,7 +905,7 @@ section .content {
 .navigation-link, .dropdown {
     display: inline-block;
     text-decoration: none;
-    padding: 16px 6px;
+    padding: 17px 6px;
     color: inherit;
     max-width: 116px;
     text-align: center;
