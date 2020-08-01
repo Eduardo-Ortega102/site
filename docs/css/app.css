@@ -572,6 +572,7 @@ section .content {
 
 .referral {
     position: relative;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     background-color: #f9f9f9;
@@ -605,12 +606,28 @@ section .content {
 }
 
 .referral::after {
-    content: 'Available on LinkedIn';
+    content: '';
     position: absolute;
     right: 20px;
     margin-top: -24px;
     text-transform: uppercase;
     color: white;
+}
+
+.referral.translated::before {
+    width: 196px !important;
+}
+
+.referral.english::after {
+    content: 'Available on LinkedIn';
+}
+
+.referral.english.translated::after {
+    content: 'Available on LinkedIn (Spanish)';
+}
+
+.referral.translated::after {
+    right: 16px;
 }
 
 .referral.spanish::before {
@@ -621,13 +638,8 @@ section .content {
     content: 'Disponible en LinkedIn';
 }
 
-#fcpct-referral.spanish::before {
-    width: 196px;
-}
-
-#fcpct-referral.spanish::after {
+.referral.spanish.translated::after {
     content: 'Disponible en LinkedIn (Inglés)';
-    right: 16px;
 }
 
 .referrer {
@@ -781,6 +793,7 @@ section .content {
     color: white;
     padding: 0 16px;
     width: calc(100% - 32px);
+    height: 56px;
     top: 0;
     right: 0;
     left: 0;
@@ -821,7 +834,7 @@ section .content {
 .navigation-link, .dropdown {
     display: inline-block;
     text-decoration: none;
-    padding: 18px 6px;
+    padding: 16px 6px;
     color: inherit;
     max-width: 116px;
     text-align: center;
