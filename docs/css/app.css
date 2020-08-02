@@ -909,6 +909,7 @@ section .content {
 
 .navigation-bar .content-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
