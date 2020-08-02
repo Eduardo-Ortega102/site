@@ -454,6 +454,7 @@ span {
     -ms-transform: none;
     transform: none;
     background-color: #22a39f;
+    border-color: #22a39f;
 }
 
 .media .link.button {
