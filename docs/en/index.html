@@ -627,15 +627,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class='paragraph small'>
-                        <p class='paragraph-body'>If you want a PDF version of my CV, you can download it by clicking on
-                            the following button.</p>
-                        <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
-                            onmousedown="mouseDown('curriculum-dialog', event)">
-                            <i class="fas fa-download"></i>
-                            Curriculum
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -718,13 +709,18 @@
                     <h2>Contact</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph small'>
+                    <div class='paragraph small' style="padding-bottom: 0px;">
                         <p class='paragraph-title'>Let's do something amazing!</p>
                         <p class='paragraph-body'>
                             Feel free to get in touch with me.
                             I am always open to discuss new projects, creative ideas and opportunities.
                         </p>
-                        <p class='paragraph-body'>Click on the next button to copy my email address.</p>
+                        <div class="media">
+                            <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
+                            <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <p class='paragraph-body'>You can also click on the next button to copy my email address.</p>
                         <div id='email'>
                             <div id="email-speech-bubble" class="speech-bubble">Copied!</div>
                             <button class="action-button"
@@ -735,11 +731,22 @@
                             </button>
                         </div>
                     </div>
-                    <div class='map'>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1588160585017!5m2!1sen!2ses"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                    <div>
+                        <div class='paragraph small' style="padding-top: 0px;">
+                            <p class='paragraph-body'>If you want a PDF version of my CV, you can download it by clicking on
+                                the following button.</p>
+                            <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
+                                onmousedown="mouseDown('curriculum-dialog', event)">
+                                <i class="fas fa-download"></i>
+                                Curriculum
+                            </button>
+                        </div>
+                        <div class='map'>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1588160585017!5m2!1sen!2ses"
+                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

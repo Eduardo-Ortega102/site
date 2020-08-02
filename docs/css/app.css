@@ -437,6 +437,25 @@ span {
     justify-content: center;
 }
 
+#contact .media .link.button {
+    width: 50px;
+    height: 50px;
+    color: #22a39f;
+    font-size: 2.1rem;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#contact .media .link.button:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    background-color: #22a39f;
+}
+
 .media .link.button {
     width: 40px;
     height: 40px;
@@ -521,6 +540,7 @@ section .content {
 .paragraph .action-button {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 .section-title {
@@ -1296,9 +1316,12 @@ section .content {
 }
 
 .map, .map iframe {
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
     height: 250px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #email .action-button {
