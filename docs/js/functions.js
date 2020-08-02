@@ -157,15 +157,36 @@ function toggleMenu() {
 }
 
 function closeMenu(menu) {
-    menu.classList.remove('responsive');
+    var content = document.querySelector('#navigation-bar .navigation-content');
+    content.classList.add('fadeOutUp');
+    setTimeout(() => {
+        menu.classList.remove('responsive');
+        content.classList.remove('fadeOutUp', 'animation-finished');
+    }, 500);
 }
 
 function openMenu(menu) {
     menu.classList.add('responsive');
+    var content = document.querySelector('#navigation-bar .navigation-content');
+    content.classList.add('fadeInDown');
+    setTimeout(() => {
+        content.classList.replace('fadeInDown', 'animation-finished');
+    }, 750);
 }
 
 function openLanguageMenu() {
-    document.getElementById('languageDropdown').classList.toggle('show');
+    var menu = document.querySelector('#languageDropdown');
+    if (menu.classList.contains('fadeInDown')) {
+        menu.classList.replace('fadeInDown', 'fadeOutUp');
+        setTimeout(() => {
+            menu.classList.remove('fadeOutUp', 'show');
+        }, 500);
+    } else {
+        menu.classList.add('fadeInDown', 'show');
+        setTimeout(() => {
+            menu.classList.add('animation-finished');
+        }, 750);
+    }
 }
 
 window.onclick = function (event) {

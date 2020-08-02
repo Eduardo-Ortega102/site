@@ -229,10 +229,16 @@
     .navigation-bar a:not(.icon):not(.brand), .dropdown {
         display: none;
     }
+    .navigation-content a:hover, .dropdown:hover {
+        background-color: #222 !important;
+    }
     .navigation-bar a.icon {
         display: block;
         margin-right: 8px;
         padding: 8px;
+    }
+    .navigation-content.animation-finished a:hover, .navigation-content.animation-finished .dropdown:hover {
+        background-color: #22A39F !important;
     }
     .navigation-bar.responsive a.icon {
         background-color: #e4e4e4;
@@ -259,6 +265,9 @@
     .navigation-bar.responsive .dropdown-content {
         width: 100%;
         left: 0;
+    }
+    .navigation-bar.responsive .content-wrapper {
+        display: block;
     }
 }
 

@@ -907,8 +907,13 @@ section .content {
     -moz-user-select: none;
 }
 
+.navigation-bar .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navigation-content {
-    width: 100%;
+    /* width: 100%; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -943,6 +948,10 @@ section .content {
 .navigation-link:hover, .dropdown-content a:hover, .current-language {
     background-color: #22A39F !important;
     color: white;
+}
+
+.dropdown-content:not(.animation-finished) a:hover {
+    background-color: #222 !important;
 }
 
 .dropdown .fa {

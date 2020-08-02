@@ -108,18 +108,18 @@
     </div>
     <nav id='navigation-bar' class='navigation-bar'>
         <div class='content-wrapper'>
-            <div class='navigation-content'>
-                <div class='main-buttons'>
-                    <a class='brand navigation-link' onclick="scrollToElement('main-header')">Inicio</a>
-                    <a class='brand navigation-link' style="margin-right: auto; opacity: 0;" href="/blog/es/">Blog</a>
-                    <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
-                        <div class='mobile-menu'>
-                            <div class='horizontal-bar'></div>
-                            <div class='horizontal-bar margin'></div>
-                            <div class='horizontal-bar'></div>
-                        </div>
-                    </a>
-                </div>
+            <div class='main-buttons'>
+                <a class='brand navigation-link' onclick="scrollToElement('main-header')">Inicio</a>
+                <a class='brand navigation-link' style="margin-right: auto; opacity: 0;" href="/blog/es/">Blog</a>
+                <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+                    <div class='mobile-menu'>
+                        <div class='horizontal-bar'></div>
+                        <div class='horizontal-bar margin'></div>
+                        <div class='horizontal-bar'></div>
+                    </div>
+                </a>
+            </div>
+            <div class='navigation-content animated fast'>
                 <div class='navigation-buttons spanish'>
                     <a class='navigation-link' onclick="scrollToElement('about-me')">Sobre m&iacute;</a>
                     <a class='navigation-link' onclick="scrollToElement('stack')">Tecnolog&iacute;as</a>
@@ -130,7 +130,7 @@
                     <div class="dropdown" onclick="openLanguageMenu()">
                         Idioma
                         <i class="fa fa-caret-down"></i>
-                        <div id="languageDropdown" class="dropdown-content">
+                        <div id="languageDropdown" class="dropdown-content animated fast">
                             <a onclick="changeLanguage('es')" class='current-language'>Español</a>
                             <a onclick="changeLanguage('en')">English</a>
                         </div>
