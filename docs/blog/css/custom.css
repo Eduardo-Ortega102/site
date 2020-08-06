@@ -682,6 +682,12 @@ p {
     background-color: #222 !important;
 }
 
+.post-card-image-credit {
+    text-align: center;
+    margin-bottom: 19px;
+    font-style: italic;
+}
+
 /*
 **  NAVIGATION BAR RESPONSIVE
 */
