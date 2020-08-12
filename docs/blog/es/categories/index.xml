@@ -6,10 +6,37 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 02 Aug 2020 15:07:55 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 15:01:11 +0100</lastBuildDate>
     
 	<atom:link href="https://www.theagilecrafter.com/blog/es/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>googlecolab</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/googlecolab/</link>
+      <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/googlecolab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machinelearning</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/machinelearning/</link>
+      <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/machinelearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/python/</link>
+      <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>apprenticeship</title>

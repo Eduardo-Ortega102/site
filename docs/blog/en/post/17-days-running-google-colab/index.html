@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>17 days running Google Colab &middot; Eduardo Ortega&#39;s blog</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://www.theagilecrafter.com/blog/favicon.ico" />
+    <link rel="canonical" href="https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/" />
+
+     <meta name="description" content="For my degree dissertation at the university, I need to run several experiments with different models of neural networks and download compressed files with the " /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://www.theagilecrafter.com/blog/img/google-colab.png"/>
+    
+ 
+    <meta name="twitter:title" content="17 days running Google Colab"/>
+    <meta name="twitter:description" content="For my degree dissertation at the university, I need to run several experiments with different models of neural networks and download compressed files with the "/>
+    <meta name="twitter:url" content="https://www.theagilecrafter.com/en/post/17-days-running-google-colab/" />
+    <meta name="twitter:site" content="@duardnaranjo"/>
+
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="17 days running Google Colab &middot; Eduardo Ortega&#39;s blog" />
+    <meta property="og:url" content="https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/" />
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="For my degree dissertation at the university, I need to run several experiments with different models of neural networks and download compressed files with the " />
+
+    <meta property="article:published_time" content="2020-08-12T15:01:11&#43;01:00" />
+    
+
+    <meta property="og:image" content="https://www.theagilecrafter.com/blog/img/google-colab.png"/>
+
+
+    <meta name="generator" content="Hugo 0.55.6" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://www.theagilecrafter.com/blog/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://www.theagilecrafter.com/blog/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap">
+    <link rel="stylesheet" href="https://www.theagilecrafter.com/css/3.7.2.animate.min.css">
+    <link rel="stylesheet" href="https://www.theagilecrafter.com/css/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://www.theagilecrafter.com/css/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="https://www.theagilecrafter.com/css/fontawesome/css/solid.min.css">
+     
+    <link rel="stylesheet" href="https://www.theagilecrafter.com/blog/css/custom.css" /> 
+     
+    <link rel="stylesheet" href="https://www.theagilecrafter.com/blog/css/404.css" /> 
+    
+
+    
+         
+    
+</head>
+
+
+
+
+<body class="ctsingle">
+  
+    <div class="site-wrapper">
+
+      <nav id='navigation-bar' class='navigation-bar'>
+  <div class='content-wrapper'>
+    <div class='main-buttons'>
+      <a class='brand navigation-link' href="https://www.theagilecrafter.com/en">Home</a>
+      <a class='brand navigation-link' href="https://www.theagilecrafter.com/blog/en">Blog</a>
+      <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+        <div class='mobile-menu'>
+          <div class='horizontal-bar'></div>
+          <div class='horizontal-bar margin'></div>
+          <div class='horizontal-bar'></div>
+        </div>
+      </a>
+    </div>
+    <div class='navigation-content animated fast'>
+      <div class='navigation-buttons'>
+        <a class='navigation-link' href="https://www.theagilecrafter.com/blog/en/categories/">Categories</a>
+        <a class='navigation-link' href="https://www.theagilecrafter.com/en/#about-me">About Me</a>
+        <a class='navigation-link' href="https://www.theagilecrafter.com/en/#contact">Contact</a>
+        <div class="dropdown" onclick="openLanguageMenu()">
+          Language
+          <i class="fa fa-caret-down"></i>
+          <div id="languageDropdown" class="dropdown-content animated fast">
+            <a id='es' onclick="changeLanguage('es')" class='language-option'>Español</a>
+            <a id='en' onclick="changeLanguage('en')" class='language-option'>English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="progress-bar-container" class="progress-bar-container">
+  <div class="progress-bar"></div>
+  <span class="progress-bar-title">17 days running Google Colab</span>
+  <div class="social-share-bar">
+    <a class="social-share-link twitter"
+    onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;"
+    href="https://twitter.com/intent/tweet?text=17%20days%20running%20Google%20Colab&amp;url=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab&via=duardnaranjo">
+    <i class="fab fa-twitter-square"></i>
+</a>
+
+<a class="social-share-link facebook"
+    onclick="window.open(this.href, 'share-facebook', 'width=550,height=235');return false;"
+    href="https://www.facebook.com/sharer/sharer.php?u=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab">
+    <i class="fab fa-facebook-square"></i>
+</a>
+
+<a class="social-share-link linkedin"
+    onclick="window.open(this.href, 'share-linkedin', 'width=550,height=235');return false;"
+    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+  </div>
+</div>
+<header class="site-header outer " 
+  style="background-image: url(https://www.theagilecrafter.com/blog/img/cover.jpg)" >
+  <script type="text/javascript" src="https://www.theagilecrafter.com/js/functions.js"></script>
+  <div class="inner">
+    <script>
+      var currentLanguage = document.documentElement.lang;
+      if (currentLanguage == 'es') {
+        document.getElementById('es').classList.add('current-language');
+      } else {
+        document.getElementById('en').classList.add('current-language');
+      }
+    </script>
+    <div class="site-header-content">
+      <h1 class="site-title"> Eduardo Ortega&#39;s blog  </h1>
+      <h2 class="site-description">Notes from a developer </h2>
+      <div class="social-media-links">
+        
+        <a class="social-link social-link-tw" href="https://twitter.com/duardnaranjo" target="_blank"
+          rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        
+        
+        <a class="social-link" href="https://www.linkedin.com/in/eortegan/en/" target="_blank"
+          rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        
+        
+        <a class="social-link" href="https://github.com/Eduardo-Ortega102" target="_blank" rel="noopener"><i
+            class="fab fa-github" aria-hidden="true"></i></a>
+        
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="site-nav-left">
+        <ul class="nav" role="menu">
+          
+          
+        </ul>
+      </div>
+      
+    </nav>
+  </div>
+</header>
+      
+
+      <main id="site-main" class="site-main outer" role="main">
+        <div class="inner">
+          <div class="post-feed">
+            <article class="post-card post reading">
+  
+  <div class="post-card-image" style="background-image: url(https://www.theagilecrafter.com/blog/img/google-colab.png)"></div>
+  
+  
+
+  <div class="post-card-content">
+    <header class="single-post-card-header">
+      <h1 class="post-card-title">17 days running Google Colab</h1>
+      
+      <span class="post-card-tags">
+        
+        <a href="https://www.theagilecrafter.com/blog//en/categories/googlecolab">googlecolab</a>
+        
+        <a href="https://www.theagilecrafter.com/blog//en/categories/python">python</a>
+        
+        <a href="https://www.theagilecrafter.com/blog//en/categories/machinelearning">machinelearning</a>
+        
+      </span>
+      
+      <div class="entry-header">
+        <div class="author">
+          <a href="https://www.theagilecrafter.com/">
+            <img class="author-profile-image"
+              src="https://www.theagilecrafter.com/blog/img/avatar.jpg" alt="Author" />
+          </a>
+          <p>
+            Written by
+            <a href="https://www.theagilecrafter.com/">
+              <strong>Eduardo Ortega</strong>
+            </a>
+          </p>
+          <div class="post-date short-date">
+            <p>
+              <strong>
+                
+                12
+                
+                
+                Aug 2020
+              </strong>
+            </p>
+          </div>
+        </div>
+        <div class="social-share" style="margin: 0%; border: 0px">
+          <a class="social-share-link twitter"
+    onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;"
+    href="https://twitter.com/intent/tweet?text=17%20days%20running%20Google%20Colab&amp;url=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab&via=duardnaranjo">
+    <i class="fab fa-twitter-square"></i>
+</a>
+
+<a class="social-share-link facebook"
+    onclick="window.open(this.href, 'share-facebook', 'width=550,height=235');return false;"
+    href="https://www.facebook.com/sharer/sharer.php?u=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab">
+    <i class="fab fa-facebook-square"></i>
+</a>
+
+<a class="social-share-link linkedin"
+    onclick="window.open(this.href, 'share-linkedin', 'width=550,height=235');return false;"
+    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+        </div>
+      </div>
+
+      <hr style="margin: 0px; margin-top: 16px;">
+    </header>
+    <section class="post-card-excerpt" style="padding: 0 25px;">
+      
+
+<p>For my degree dissertation at the university, I need to run several experiments with different models of neural networks and download compressed files with the results and models learned, for this I am using an environment known as <em>Google Collaboratory</em> or <em>Google Colab</em>. In total, I need to download more than 23000 files.</p>
+
+<p>In the last 17 days, I have successfully executed 19923 experiments and I have encountered certain problems that have delayed me, <strong>in this post I will talk about those problems</strong> so that they do not go unnoticed in the future.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ol>
+<li>Definitions</li>
+<li>Virtual Machines (Sessions)</li>
+<li>Internet connection</li>
+<li>Display Graphics</li>
+<li>Preventing Data Loss: Connect to Google Drive</li>
+<li>Uploading Files from Google Drive</li>
+</ol>
+
+<h2 id="1-definitions">1. Definitions</h2>
+
+<p><strong><em>Google Colaboratory</em></strong>: is a free <em>Jupyter Notebook</em> environment that requires no configuration and runs entirely in the cloud. On the other hand, <em>Jupyter Notebook</em> is an interactive environment that allows to develop <em>Python</em> code dynamically and runs as a client-server application.</p>
+
+<p><strong><em>Notebook</em></strong>: files created in <em>Colab</em> or <em>Jupyter</em>.</p>
+
+<p><strong><em>Cell</em></strong>: the notebooks are divided into small blocks called <em>cells</em>, in them you can execute <em>Python</em> code or render text using <em>Markdown</em>.</p>
+
+<h2 id="2-virtual-machines-sessions">2. Virtual Machines (Sessions)</h2>
+
+<p><em>Colab</em> uses virtual machines to execute the notebook code on the server, these machines have a maximum life span of 12 hours. Therefore, anything that takes more than 12 hours to run will be incomplete.</p>
+
+<p>Each <em>Google account</em> can have a maximum of 5 open sessions simultaneously, in this context, a session is a virtual machine. This limit can be reduced over time, for example: if you chain several runs of 5 sessions and 12 hours each, you will end up with a limit of only one open session. This limit lasts approximately 12 hours.</p>
+
+<p>For this reason, if you need to have 5 active sessions at all times, it&rsquo;s best to have a second <em>Google account</em> to fall back on when the limit appears in the first one.</p>
+
+<h2 id="3-internet-connection">3. Internet connection</h2>
+
+<p>For a <em>Colab</em> notebook to run, you must be connected to the internet. If you have bad WiFi coverage, it is possible that the execution will stop because the server interprets that you have disconnected, so it is better to connect the computer to the router using a wire and turn off the computer&rsquo;s WiFi card.</p>
+
+<h2 id="4-display-graphics">4. Display Graphics</h2>
+
+<p>Displaying graphs in <em>Colab</em> is useful, but <strong>they will only be shown when the execution of the corresponding cell is finished</strong>. If you use a cell that takes 12 hours to execute, like me, you will not see the graphs until that time passes, or worse, it is possible that so many graphs are accumulated, that the execution of the virtual machine stops because you have consumed all the available RAM memory. Also, when you have more than 20 figures open, there is a <em>warning</em> quite annoying at the output of the execution.</p>
+
+<p>To avoid all this, the best thing is to save the graphics as an image and then close them, this way:</p>
+
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+def plot_learning_curve(training_values, validation_values, iteration, file_to_save):
+    fig, axes = plt.subplots(constrained_layout=True, figsize=(13, 5))
+    fig.suptitle('Learning Curve Model {}'.format(iteration))
+    axes.set_ylabel('loss')
+    axes.set_xlabel('epoch')
+    axes.plot(training_values, label='train')
+    axes.plot(validation_values, label='validation')
+    axes.legend(loc='upper right')
+    fig.savefig('{}.png'.format(file_to_save))
+    plt.close('all')
+</code></pre>
+
+<h2 id="5-preventing-data-loss-connect-to-google-drive">5. Preventing Data Loss: Connect to Google Drive</h2>
+
+<p>Once the virtual machine is disconnected, which can happen because of all the above mentioned, the local files that were in it are lost, so it is a good idea to connect the notebook with <em>Google Drive</em> and save all the generated files in a folder. This also makes downloading files easier, since there is no option in <em>Colab</em> to download several files at once, they have to be downloaded one at a time.</p>
+
+<p>To connect with <em>Drive</em>, just execute the following code:</p>
+
+<pre><code class="language-python">from google.colab import drive
+drive.mount('/content/drive')
+</code></pre>
+
+<p><br>
+This will generate a link that will open a dialog box, where we will select the <em>Drive</em> account we want to connect to and it will generate a password that must be entered in the notebook.</p>
+
+<h2 id="6-uploading-files-from-google-drive">6. Uploading Files from Google Drive</h2>
+
+<p>Uploading several files to several sessions can be a bit annoying as it is a repetitive and time-consuming task, depending on the number of files and their size. Virtual machines use <em>Linux</em>, so to avoid this delay, you can connect the sessions with <em>Google Drive</em>, copy from there the necessary files and import the functions later.</p>
+
+<p>As for the data files, they can be accessed directly from <em>Drive</em> without copying them, assuming that they will not be modified during the notebook execution.</p>
+
+<p>For example, if you have 3 source files, you can save time this way:</p>
+
+<pre><code class="language-python">from google.colab import drive
+drive.mount('/content/drive')
+%cp &quot;/content/drive/My Drive/source/models.py&quot; .
+%cp &quot;/content/drive/My Drive/source/trainer.py&quot; .
+%cp &quot;/content/drive/My Drive/source/experiment.py&quot; .
+
+from os import path
+from experiment import Experiment
+from models import create_2hidden_layers_model
+
+G_DRIVE_DATA = '/content/drive/My Drive/source'
+experiment = Experiment(model=create_2hidden_layers_model())
+experiment.execute(file=path.join(G_DRIVE_DATA, 'file_1.csv'))
+experiment.execute(file=path.join(G_DRIVE_DATA, 'file_2.csv'))
+</code></pre>
+
+<p><br>
+The symbol &ldquo;<strong><em>%</em></strong>&rdquo; means that we are going to execute a <em>Linux</em> command instead of <em>Python</em> code.</p>
+
+    </section>
+  </div>
+  <div class="social-share">
+    <h4>SHARE THIS POST</h4>
+    <a class="social-share-link twitter"
+    onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;"
+    href="https://twitter.com/intent/tweet?text=17%20days%20running%20Google%20Colab&amp;url=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab&via=duardnaranjo">
+    <i class="fab fa-twitter-square"></i>
+</a>
+
+<a class="social-share-link facebook"
+    onclick="window.open(this.href, 'share-facebook', 'width=550,height=235');return false;"
+    href="https://www.facebook.com/sharer/sharer.php?u=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab">
+    <i class="fab fa-facebook-square"></i>
+</a>
+
+<a class="social-share-link linkedin"
+    onclick="window.open(this.href, 'share-linkedin', 'width=550,height=235');return false;"
+    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+  </div>
+</article>
+          </div>
+        </div>
+      </main>
+
+      <aside class="read-next outer">
+        <div class="inner">
+          <div class="read-next-feed">
+            
+            
+          </div>
+        </div>
+      </aside>
+
+
+      <footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section>
+      <a href="https://www.theagilecrafter.com/blog/en"> Eduardo Ortega&#39;s blog </a>
+    </section>
+    <section class="copyright" style="line-height: 1.3em; text-align: center;">
+      <a href="https://www.theagilecrafter.com/blog/"></a>
+      Copyright © 2020
+      <br>
+      
+      <span style="font-size: 0.8em;">
+        Customized
+        <a href="https://www.telematika.org">EM</a>'s
+        <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a>
+        theme
+      </span>
+      
+    </section>
+    <nav class="footer-nav">
+      <div class="social-media-links">
+        
+        <a class="social-link" href="https://github.com/Eduardo-Ortega102" target="_blank" rel="noopener"><i
+            class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        <span class="vertical-line"></span>
+        
+        
+        <a class="social-link" href="https://www.linkedin.com/in/eortegan/en/" target="_blank"
+          rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <span class="vertical-line"></span>
+        
+        
+        <a class="social-link social-link-tw" href="https://twitter.com/duardnaranjo" target="_blank"
+          rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+    </nav>
+  </div>
+</footer>
+    </div>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="https://www.theagilecrafter.com/blog/js/jquery.fitvids.js"></script>
+
+<script type="text/javascript" src="https://www.theagilecrafter.com/blog/js/progress-bar.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+  </body>
+
+  </html>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
-    <link>https://www.theagilecrafter.com/blog/en/post/</link>
-    <description>Recent content in Posts on </description>
+    <title>machinelearning on </title>
+    <link>https://www.theagilecrafter.com/blog/en/categories/machinelearning/</link>
+    <description>Recent content in machinelearning on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 12 Aug 2020 15:01:11 +0100</lastBuildDate>
     
-	<atom:link href="https://www.theagilecrafter.com/blog/en/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.theagilecrafter.com/blog/en/categories/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</guid>
       <description>For my degree dissertation at the university, I need to run several experiments with different models of neural networks and download compressed files with the results and models learned, for this I am using an environment known as Google Collaboratory or Google Colab.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/my-first-post/</link>
-      <pubDate>Sun, 02 Aug 2020 15:07:55 +0100</pubDate>
-      
-      <guid>https://www.theagilecrafter.com/blog/en/post/my-first-post/</guid>
-      <description>Hello, everybody! Especially my future self. I have decided that in the first post of my blog I am going to explain why I am writing it and what I hope to achieve with it.
-First of all, I intend this blog to be an online notebook in which I will document theoretical and practical concepts about software development and computing in general.</description>
     </item>
     
   </channel>

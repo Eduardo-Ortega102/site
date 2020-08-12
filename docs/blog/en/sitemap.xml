@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/en/</loc>
-    <lastmod>2020-08-02T15:07:55+01:00</lastmod>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -19,8 +19,23 @@
   </url>
   
   <url>
+    <loc>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</loc>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/17-days-running-google-colab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.theagilecrafter.com/blog/en/categories/</loc>
-    <lastmod>2020-08-02T15:07:55+01:00</lastmod>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -31,6 +46,70 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.theagilecrafter.com/blog/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/post/</loc>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/googlecolab/</loc>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/googlecolab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/googlecolab/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/machinelearning/</loc>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/machinelearning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/machinelearning/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/python/</loc>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/python/"
                 />
   </url>
   
@@ -46,22 +125,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.theagilecrafter.com/blog/en/post/my-first-post/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/</loc>
-    <lastmod>2020-08-02T15:07:55+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/"
                 />
   </url>
   
