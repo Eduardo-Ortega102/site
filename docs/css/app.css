@@ -437,6 +437,26 @@ span {
     justify-content: center;
 }
 
+#contact .media .link.button {
+    width: 50px;
+    height: 50px;
+    color: #22a39f;
+    font-size: 2.1rem;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#contact .media .link.button:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    background-color: #22a39f;
+    border-color: #22a39f;
+}
+
 .media .link.button {
     width: 40px;
     height: 40px;
@@ -521,6 +541,7 @@ section .content {
 .paragraph .action-button {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 .section-title {
@@ -573,6 +594,7 @@ section .content {
 .carousel {
     margin: 26px 0px;
 }
+
 .slideshow-container {
     position: relative;
     margin: 0px;
@@ -885,8 +907,14 @@ section .content {
     -moz-user-select: none;
 }
 
+.navigation-bar .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .navigation-content {
-    width: 100%;
+    /* width: 100%; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -905,7 +933,7 @@ section .content {
 .navigation-link, .dropdown {
     display: inline-block;
     text-decoration: none;
-    padding: 16px 6px;
+    padding: 17px 6px;
     color: inherit;
     max-width: 116px;
     text-align: center;
@@ -923,16 +951,16 @@ section .content {
     color: white;
 }
 
+.dropdown-content:not(.animation-finished) a:hover {
+    background-color: #222 !important;
+}
+
 .dropdown .fa {
     margin-left: 6px;
 }
 
 .dropdown {
     min-width: 120px;
-}
-
-.navigation-buttons.spanish .dropdown {
-    min-width: 80px;
 }
 
 .dropdown:hover {
@@ -958,10 +986,6 @@ section .content {
     width: 112px;
     text-transform: uppercase;
     padding: 6px 12px;
-}
-
-.navigation-buttons.spanish .dropdown-content a {
-    width: 80px;
 }
 
 .show {
@@ -1007,12 +1031,22 @@ section .content {
     background-color: inherit;
     border: 1px solid black;
     padding: 6px;
-    width: 50%;
+    width: 46%;
     margin-top: 6px;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 50px;
     font-weight: bold;
+}
+
+.project-wrapper button.description {
+    margin-left: 6px;
+    margin-right: 3px;
+}
+
+.project-wrapper button.stack {
+    margin-left: 3px;
+    margin-right: 6px;
 }
 
 .project-wrapper button:hover, .project-wrapper button:focus, .project-wrapper button.active {
@@ -1080,7 +1114,7 @@ section .content {
 }
 
 .project .overlay {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.82);
     padding: 18px;
     height: calc(100% - 36px);
     width: calc(100% - 36px);
@@ -1110,11 +1144,18 @@ section .content {
     -webkit-transform: translateY(100%);
 }
 
-.project.active .overlay {
+.project.active.description .overlay.description, .project.active.stack .overlay.stack {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+}
+
+.project .overlay.stack ul {
+    display: inline-block;
+    margin: auto;
+    margin-right: 25px;
+    vertical-align: top;
 }
 
 .project .paragraph-title {
@@ -1129,6 +1170,7 @@ section .content {
 
 .project .paragraph-body {
     font-size: 16px;
+    min-height: 78px;
 }
 
 .project p {
@@ -1303,9 +1345,12 @@ section .content {
 }
 
 .map, .map iframe {
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
     height: 250px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #email .action-button {

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript" src="/js/projects-handler.js"></script>
 </head>
 
 <body>
@@ -108,18 +109,18 @@
     </div>
     <nav id='navigation-bar' class='navigation-bar'>
         <div class='content-wrapper'>
-            <div class='navigation-content'>
-                <div class='main-buttons'>
-                    <a class='brand navigation-link' onclick="scrollToElement('main-header')">Home</a>
-                    <a class='brand navigation-link' style="margin-right: auto; opacity: 0;" href="/blog/en/">Blog</a>
-                    <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
-                        <div class='mobile-menu'>
-                            <div class='horizontal-bar'></div>
-                            <div class='horizontal-bar margin'></div>
-                            <div class='horizontal-bar'></div>
-                        </div>
-                    </a>
-                </div>
+            <div class='main-buttons'>
+                <a class='brand navigation-link' onclick="scrollToElement('main-header')">Home</a>
+                <a class='brand navigation-link' style="margin-right: auto;" href="/blog/en/">Blog</a>
+                <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+                    <div class='mobile-menu'>
+                        <div class='horizontal-bar'></div>
+                        <div class='horizontal-bar margin'></div>
+                        <div class='horizontal-bar'></div>
+                    </div>
+                </a>
+            </div>
+            <div class='navigation-content animated fast'>
                 <div class='navigation-buttons'>
                     <a class='navigation-link' onclick="scrollToElement('about-me')">About me</a>
                     <a class='navigation-link' onclick="scrollToElement('stack')">Stack</a>
@@ -130,7 +131,7 @@
                     <div class="dropdown" onclick="openLanguageMenu()">
                         Language
                         <i class="fa fa-caret-down"></i>
-                        <div id="languageDropdown" class="dropdown-content">
+                        <div id="languageDropdown" class="dropdown-content animated fast">
                             <a onclick="changeLanguage('es')">Español</a>
                             <a onclick="changeLanguage('en')" class='current-language'>English</a>
                         </div>
@@ -150,7 +151,7 @@
                     <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
                     <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i
                             class="fab fa-linkedin-in"></i></a>
-                    <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
+                    <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div id="curriculum-dialog" class="modal-dialog">
                     <div class="modal-window">
@@ -287,9 +288,9 @@
                     <h2>Public Projects</h2>
                 </div>
                 <div class='content buttons'>
-                    <button id='all' class='filter-button active' onclick='filterProjects(this.id)'>All</button>
-                    <button id='real' class='filter-button' onclick='filterProjects(this.id)'>Professional</button>
-                    <button id='personal' class='filter-button' onclick='filterProjects(this.id)'>Personal</button>
+                    <button id='all' class='filter-button active' onclick='projectsHandler.filter(this.id)'>All</button>
+                    <button id='real' class='filter-button' onclick='projectsHandler.filter(this.id)'>Professional</button>
+                    <button id='personal' class='filter-button' onclick='projectsHandler.filter(this.id)'>Personal</button>
                 </div>
                 <div class='content'>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
@@ -297,14 +298,30 @@
                             <div class='image-container'>
                                 <img alt='personal site' src='/img/personal-site2.png'>
                             </div>
-                            <div class='overlay'>
+                            <div class='overlay description'>
                                 <p class='paragraph-title'>Personal Website</p>
                                 <p class='paragraph-body'>
                                     My website: professional introduction of a software engineer.
                                 </p>
                             </div>
+                            <div class='overlay stack'>
+                                <p class='paragraph-title'>Stack</p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Hugo</li>
+                                        <li>JSON</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <button onclick='displayProjectInfo(this, "personal-website")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("personal-website")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("personal-website")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='oceans' class='project'>
@@ -313,16 +330,30 @@
                                     <img alt='oceans' src='/img/oceans.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Oceans</p>
                                     <p class='paragraph-body'>
                                         Portal of the Oceans aesthetic centre. Services, offers and contact details of
                                         the company are displayed.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>JSON</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "oceans")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("oceans")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("oceans")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='visor-geoportal' class='project'>
@@ -332,7 +363,7 @@
                                     <img alt='geoportal' src='/img/visor-geoportal.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Dynamic Viewer</p>
                                     <p class='paragraph-body'>
                                         ECOAQUA interactive web viewer, where you can consult coastal information from
@@ -341,9 +372,26 @@
                                         each map separately.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "visor-geoportal")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("visor-geoportal")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("visor-geoportal")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-ecoaqua' class='project'>
@@ -353,7 +401,7 @@
                                     <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Services List</p>
                                     <p class='paragraph-body'>
                                         Portal that lists the information on the coastal resources of the Canary Islands
@@ -361,9 +409,25 @@
                                         WFS, CSW, DWL format).
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-ecoaqua")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-ecoaqua")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-ecoaqua")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='marsp' class='project'>
@@ -372,7 +436,7 @@
                                     <img alt='marsp' src='/img/marsp.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Marsp</p>
                                     <p class='paragraph-body'>
                                         Portal of the MarSP Canarias platform. MarSP project intends to reinforce the
@@ -380,9 +444,23 @@
                                         processes in the three EU macaronesian archipelagos.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>jQuery</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "marsp")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("marsp")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("marsp")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='lanzarote' class='project'>
@@ -391,16 +469,33 @@
                                     <img alt='lanzarote' src='/img/lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Map Viewer</p>
                                     <p class='paragraph-body'>
                                         Interactive web viewer where you can consult the maps of the Spatial Data
                                         Infrastructure of Lanzarote.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                            <li>GeoServer</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "lanzarote")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("lanzarote")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("lanzarote")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-lanzarote' class='project'>
@@ -409,16 +504,31 @@
                                     <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Services List</p>
                                     <p class='paragraph-body'>
                                         Portal that lists the geographic information that the Spatial Data
                                         Infrastructure of Lanzarote offers (maps in WMS format).
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-lanzarote")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-lanzarote")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-lanzarote")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='runbots' class='project'>
@@ -428,16 +538,25 @@
                                     <img alt='runbots' src='/img/runbots.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Runbots</p>
                                     <p class='paragraph-body'>
                                         Single player game developed during the Ludum Dare 35 competition, with the
                                         theme "Shapeshift".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "runbots")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("runbots")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("runbots")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='pushfirst' class='project'>
@@ -447,16 +566,25 @@
                                     <img alt='pushfirst' src='/img/pushfirst.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>push first</p>
                                     <p class='paragraph-body'>
                                         Two players game developed during the Ludum Dare 34 competition, with the themes
                                         "Two Button Controls" or "Growing".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "pushfirst")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("pushfirst")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("pushfirst")'>Show Stack</button>
                     </div>
                     <div class='project dummy'></div>
                     <div class='project dummy'></div>
@@ -627,15 +755,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class='paragraph small'>
-                        <p class='paragraph-body'>If you want a PDF version of my CV, you can download it by clicking on
-                            the following button.</p>
-                        <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
-                            onmousedown="mouseDown('curriculum-dialog', event)">
-                            <i class="fas fa-download"></i>
-                            Curriculum
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -647,7 +766,7 @@
                 <div class='content'>
                     <div class="carousel">
                         <div class="slideshow-container">
-                            <div class="slide active">
+                            <div class="slide animated fast active">
                                 <div class='referral english'>
                                     <p class='title'>
                                         <i class="fas fa-quote-left"></i>
@@ -675,7 +794,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slide">
+                            <div class="slide animated fast">
                                 <div class='referral english translated'>
                                     <p class='title'>
                                         <i class="fas fa-quote-left"></i>
@@ -701,12 +820,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-prev" onclick="previousSlide()">&#10094;</a>
-                            <a class="carousel-next" onclick="nextSlide()">&#10095;</a>
+                            <a class="carousel-prev" onclick="carousel.showPreviousSlide()">&#10094;</a>
+                            <a class="carousel-next" onclick="carousel.showNextSlide()">&#10095;</a>
                         </div>
                         <div class="carousel-dot-container">
-                            <span class="carousel-dot active" onclick="currentSlide(0)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                            <span class="carousel-dot active" onclick="carousel.setCurrentSlide(0)"></span>
+                            <span class="carousel-dot" onclick="carousel.setCurrentSlide(1)"></span>
                         </div>
                     </div>
                 </div>
@@ -718,13 +837,18 @@
                     <h2>Contact</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph small'>
+                    <div class='paragraph small' style="padding-bottom: 0px;">
                         <p class='paragraph-title'>Let's do something amazing!</p>
                         <p class='paragraph-body'>
                             Feel free to get in touch with me.
                             I am always open to discuss new projects, creative ideas and opportunities.
                         </p>
-                        <p class='paragraph-body'>Click on the next button to copy my email address.</p>
+                        <div class="media">
+                            <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
+                            <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <p class='paragraph-body'>You can also click on the next button to copy my email address.</p>
                         <div id='email'>
                             <div id="email-speech-bubble" class="speech-bubble">Copied!</div>
                             <button class="action-button"
@@ -735,11 +859,22 @@
                             </button>
                         </div>
                     </div>
-                    <div class='map'>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1588160585017!5m2!1sen!2ses"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                    <div>
+                        <div class='paragraph small' style="padding-top: 0px;">
+                            <p class='paragraph-body'>If you want a PDF version of my CV, you can download it by clicking on
+                                the following button.</p>
+                            <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
+                                onmousedown="mouseDown('curriculum-dialog', event)">
+                                <i class="fas fa-download"></i>
+                                Curriculum
+                            </button>
+                        </div>
+                        <div class='map'>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1588160585017!5m2!1sen!2ses"
+                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -749,7 +884,7 @@
         <div class="media">
             <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
             <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i class="fab fa-linkedin-in"></i></a>
-            <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
+            <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
         </div>
         <div class='copyright'>
             <p>Copyright &copy; 2020 </p>

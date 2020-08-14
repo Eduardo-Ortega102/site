@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript" src="/js/projects-handler.js"></script>
 </head>
 
 <body>
@@ -108,18 +109,18 @@
     </div>
     <nav id='navigation-bar' class='navigation-bar'>
         <div class='content-wrapper'>
-            <div class='navigation-content'>
-                <div class='main-buttons'>
-                    <a class='brand navigation-link' onclick="scrollToElement('main-header')">Inicio</a>
-                    <a class='brand navigation-link' style="margin-right: auto; opacity: 0;" href="/blog/es/">Blog</a>
-                    <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
-                        <div class='mobile-menu'>
-                            <div class='horizontal-bar'></div>
-                            <div class='horizontal-bar margin'></div>
-                            <div class='horizontal-bar'></div>
-                        </div>
-                    </a>
-                </div>
+            <div class='main-buttons'>
+                <a class='brand navigation-link' onclick="scrollToElement('main-header')">Inicio</a>
+                <a class='brand navigation-link' style="margin-right: auto;" href="/blog/es/">Blog</a>
+                <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+                    <div class='mobile-menu'>
+                        <div class='horizontal-bar'></div>
+                        <div class='horizontal-bar margin'></div>
+                        <div class='horizontal-bar'></div>
+                    </div>
+                </a>
+            </div>
+            <div class='navigation-content animated fast'>
                 <div class='navigation-buttons spanish'>
                     <a class='navigation-link' onclick="scrollToElement('about-me')">Sobre m&iacute;</a>
                     <a class='navigation-link' onclick="scrollToElement('stack')">Tecnolog&iacute;as</a>
@@ -130,7 +131,7 @@
                     <div class="dropdown" onclick="openLanguageMenu()">
                         Idioma
                         <i class="fa fa-caret-down"></i>
-                        <div id="languageDropdown" class="dropdown-content">
+                        <div id="languageDropdown" class="dropdown-content animated fast">
                             <a onclick="changeLanguage('es')" class='current-language'>Español</a>
                             <a onclick="changeLanguage('en')">English</a>
                         </div>
@@ -150,7 +151,7 @@
                     <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
                     <a class="link button" href="https://es.linkedin.com/in/eortegan/es/"><i
                             class="fab fa-linkedin-in"></i></a>
-                    <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
+                    <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div id="curriculum-dialog" class="modal-dialog">
                     <div class="modal-window">
@@ -290,9 +291,9 @@
                     <h2>Proyectos P&uacute;blicos</h2>
                 </div>
                 <div class='content buttons'>
-                    <button id='all' class='filter-button active' onclick='filterProjects(this.id)'>Todos</button>
-                    <button id='real' class='filter-button' onclick='filterProjects(this.id)'>Profesionales</button>
-                    <button id='personal' class='filter-button' onclick='filterProjects(this.id)'>Personales</button>
+                    <button id='all' class='filter-button active' onclick='projectsHandler.filter(this.id)'>Todos</button>
+                    <button id='real' class='filter-button' onclick='projectsHandler.filter(this.id)'>Profesionales</button>
+                    <button id='personal' class='filter-button' onclick='projectsHandler.filter(this.id)'>Personales</button>
                 </div>
                 <div class='content'>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
@@ -300,14 +301,30 @@
                             <div class='image-container'>
                                 <img alt='personal site' src='/img/personal-site2.png'>
                             </div>
-                            <div class='overlay'>
+                            <div class='overlay description'>
                                 <p class='paragraph-title'>Web Personal</p>
                                 <p class='paragraph-body'>
                                     Mi p&aacute;gina web: presentaci&oacute;n profesional de un ingeniero de software.
                                 </p>
                             </div>
+                            <div class='overlay stack'>
+                                <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Hugo</li>
+                                        <li>JSON</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <button onclick='displayProjectInfo(this, "personal-website")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("personal-website")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("personal-website")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='oceans' class='project'>
@@ -316,16 +333,30 @@
                                     <img alt='oceans' src='/img/oceans.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Oceans</p>
                                     <p class='paragraph-body'>
                                         Portal del centro de est&eacute;tica Oceans. Se muestran los servicios, ofertas
                                         y datos de contacto de la empresa.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>JSON</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "oceans")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("oceans")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("oceans")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='visor-geoportal' class='project'>
@@ -335,7 +366,7 @@
                                     <img alt='geoportal' src='/img/visor-geoportal.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Visor Din&aacute;mico</p>
                                     <p class='paragraph-body'>
                                         Visor web interactivo de ECOAQUA, en el que se puede consultar
@@ -344,9 +375,26 @@
                                         introducir cada mapa por separado.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "visor-geoportal")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("visor-geoportal")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("visor-geoportal")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-ecoaqua' class='project'>
@@ -356,17 +404,32 @@
                                     <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Lista de Servicios</p>
                                     <p class='paragraph-body'>
                                         Portal en el que se enumera la informaci&oacute;n sobre los recursos costeros de
-                                        Canarias que ofrece ECOAQUA
-                                        (datos en formato WMS, WFS, CSW, DWL).
+                                        Canarias que ofrece ECOAQUA (datos en formato WMS, WFS, CSW, DWL).
                                     </p>
+                                </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-ecoaqua")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-ecoaqua")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-ecoaqua")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='marsp' class='project'>
@@ -375,7 +438,7 @@
                                     <img alt='marsp' src='/img/marsp.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Marsp</p>
                                     <p class='paragraph-body'>
                                         Portal de la plataforma MarSP Canarias. El proyecto MarSP pretende reforzar los
@@ -383,9 +446,23 @@
                                         Mar&iacute;timo (OEM) en los tres archipi&eacute;lagos macaronesios de la UE.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>jQuery</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "marsp")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("marsp")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("marsp")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='lanzarote' class='project'>
@@ -394,16 +471,33 @@
                                     <img alt='lanzarote' src='/img/lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Visor de Mapas</p>
                                     <p class='paragraph-body'>
                                         Visor web interactivo en el que se pueden consultar los mapas de la
                                         Infraestructura de Datos Espaciales de Lanzarote.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                            <li>GeoServer</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "lanzarote")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("lanzarote")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("lanzarote")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-lanzarote' class='project'>
@@ -412,7 +506,7 @@
                                     <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Lista de Servicios</p>
                                     <p class='paragraph-body'>
                                         Portal en el que se enumera la informaci&oacute;n geogr&aacute;fica que ofrece
@@ -420,9 +514,24 @@
                                         (mapas en formato WMS).
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-lanzarote")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-lanzarote")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-lanzarote")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='runbots' class='project'>
@@ -432,16 +541,25 @@
                                     <img alt='runbots' src='/img/runbots.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Runbots</p>
                                     <p class='paragraph-body'>
                                         Videojuego para un jugador desarrollado durante la competici&oacute;n Ludum Dare
                                         35, con el tema "Cambio de forma".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "runbots")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("runbots")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("runbots")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='pushfirst' class='project'>
@@ -451,7 +569,7 @@
                                     <img alt='pushfirst' src='/img/pushfirst.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>push first</p>
                                     <p class='paragraph-body'>
                                         Videojuego para dos jugadores desarrollado durante la competici&oacute;n Ludum
@@ -459,9 +577,18 @@
                                         dos Botones" o "Crecimiento".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "pushfirst")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("pushfirst")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("pushfirst")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project dummy'></div>
                     <div class='project dummy'></div>
@@ -641,16 +768,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class='paragraph small'>
-                        <p class='paragraph-body'>Si quieres una versi&oacute;n en PDF de mi CV, puedes descargarla
-                            haciendo
-                            clic en el siguiente bot&oacute;n.</p>
-                        <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
-                            onmousedown="mouseDown('curriculum-dialog', event)">
-                            <i class="fas fa-download"></i>
-                            Curriculum
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -662,7 +779,7 @@
                 <div class='content'>
                     <div class="carousel">
                         <div class="slideshow-container">
-                            <div class="slide active">
+                            <div class="slide animated fast active">
                                 <div class='referral spanish translated'>
                                     <p class='title'>
                                         <i class="fas fa-quote-left"></i>
@@ -690,7 +807,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slide">
+                            <div class="slide animated fast">
                                 <div class='referral spanish'>
                                     <p class='title'>
                                         <i class="fas fa-quote-left"></i>
@@ -716,12 +833,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-prev" onclick="previousSlide()">&#10094;</a>
-                            <a class="carousel-next" onclick="nextSlide()">&#10095;</a>
+                            <a class="carousel-prev" onclick="carousel.showPreviousSlide()">&#10094;</a>
+                            <a class="carousel-next" onclick="carousel.showNextSlide()">&#10095;</a>
                         </div>
                         <div class="carousel-dot-container">
-                            <span class="carousel-dot active" onclick="currentSlide(0)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                            <span class="carousel-dot active" onclick="carousel.setCurrentSlide(0)"></span>
+                            <span class="carousel-dot" onclick="carousel.setCurrentSlide(1)"></span>
                         </div>
                     </div>
                 </div>
@@ -733,14 +850,19 @@
                     <h2>Contacto</h2>
                 </div>
                 <div class='content'>
-                    <div class='paragraph small'>
+                    <div class='paragraph small' style="padding-bottom: 0px;">
                         <p class='paragraph-title'>¡Hagamos algo asombroso!</p>
                         <p class='paragraph-body'>
                             No dudes en contactar conmigo.
                             Siempre estoy abierto a discutir nuevos proyectos, ideas creativas y oportunidades.
                         </p>
+                        <div class="media">
+                            <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
+                            <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
+                        </div>
                         <p class='paragraph-body'>
-                            Haz clic en el siguiente bot&oacute;n para copiar mi email.
+                            Tambi&eacute;n puedes hacer clic en el siguiente bot&oacute;n para copiar mi direcci&oacute;n de correo electr&oacute;nico.
                         </p>
                         <div id='email'>
                             <div id="email-speech-bubble" class="speech-bubble">¡Copiado!</div>
@@ -752,12 +874,23 @@
                             </button>
                         </div>
                     </div>
-
-                    <div class='map'>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1588160679022!5m2!1ses!2ses"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                    <div>
+                        <div class='paragraph small' style="padding-top: 0px;">
+                            <p class='paragraph-body'>Si quieres una versi&oacute;n en PDF de mi CV, puedes descargarla
+                                haciendo
+                                clic en el siguiente bot&oacute;n.</p>
+                            <button class="action-button no-focus" onclick="openModal('curriculum-dialog')"
+                                onmousedown="mouseDown('curriculum-dialog', event)">
+                                <i class="fas fa-download"></i>
+                                Curriculum
+                            </button>
+                        </div>
+                        <div class='map'>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225198.63998496532!2d-15.6174094!3d28.1242953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40950e91c097d1%3A0xab36b5ac5338ba65!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1588160679022!5m2!1ses!2ses"
+                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -767,7 +900,7 @@
         <div class="media">
             <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
             <a class="link button" href="https://es.linkedin.com/in/eortegan/es/"><i class="fab fa-linkedin-in"></i></a>
-            <a class="link button" href="https://twitter.com/duardnaranjo"><i class="fab fa-twitter"></i></a>
+            <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
         </div>
         <div class='copyright'>
             <p>Copyright &copy; 2020 </p>

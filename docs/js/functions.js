@@ -107,46 +107,6 @@ function scrollToElement(id) {
     }
 }
 
-
-function filterProjects(filter) {
-    document.querySelectorAll('.filter-button', '.active').forEach(button => {
-        button.classList.remove('active');
-    });
-    document.getElementById(filter).classList.add('active');
-    document.querySelectorAll('[data-categories]').forEach(project => {
-        if (filter !== 'all' && !project.dataset.categories.includes(filter)) {
-            project.classList.add('hidden');
-        } else {
-            project.classList.remove('hidden');
-        }
-    });
-}
-
-function displayProjectInfo(button, projectId) {
-    const activeClass = 'active';
-    const project = document.getElementById(projectId);
-    if (project.classList.contains(activeClass)) {
-        button.innerText = getButtonText('expand');
-        button.classList.remove(activeClass);
-        project.classList.remove(activeClass);
-    } else {
-        button.innerText = getButtonText('contract');
-        button.classList.add(activeClass);
-        project.classList.add(activeClass);
-    }
-    button.blur();
-}
-
-function getButtonText(mode) {
-    const expandMode = 'expand';
-    const isEnglish = window.location.href.includes('/en/');
-    if (isEnglish) {
-        return mode === expandMode ? 'Read more' : 'Read less';
-    }
-    return mode === expandMode ? 'Leer más' : 'Leer menos';
-}
-
-
 function toggleMenu() {
     var menu = document.getElementById('navigation-bar');
     if (menu.classList.contains('responsive')) {
@@ -157,15 +117,36 @@ function toggleMenu() {
 }
 
 function closeMenu(menu) {
-    menu.classList.remove('responsive');
+    var content = document.querySelector('#navigation-bar .navigation-content');
+    content.classList.add('fadeOutUp');
+    setTimeout(() => {
+        menu.classList.remove('responsive');
+        content.classList.remove('fadeOutUp', 'animation-finished');
+    }, 500);
 }
 
 function openMenu(menu) {
     menu.classList.add('responsive');
+    var content = document.querySelector('#navigation-bar .navigation-content');
+    content.classList.add('fadeInDown');
+    setTimeout(() => {
+        content.classList.replace('fadeInDown', 'animation-finished');
+    }, 750);
 }
 
 function openLanguageMenu() {
-    document.getElementById('languageDropdown').classList.toggle('show');
+    var menu = document.querySelector('#languageDropdown');
+    if (menu.classList.contains('fadeInDown')) {
+        menu.classList.replace('fadeInDown', 'fadeOutUp');
+        setTimeout(() => {
+            menu.classList.remove('fadeOutUp', 'show');
+        }, 500);
+    } else {
+        menu.classList.add('fadeInDown', 'show');
+        setTimeout(() => {
+            menu.classList.add('animation-finished');
+        }, 750);
+    }
 }
 
 window.onclick = function (event) {

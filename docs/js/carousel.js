@@ -1,31 +1,53 @@
 
-var slideIndex = 0;
+const carousel = (function () {
+    const DELAY_IN_MILLISECONDS = 500;
+    var currentSlide = 0;
+    var previousSlide = 0;
 
+    function updatePrevious() {
+        previousSlide = currentSlide;
+    }
 
-function previousSlide() {
-    slideIndex--;
-    showSlides();
-}
+    function showPreviousSlide() {
+        updatePrevious();
+        currentSlide--;
+        showSlide();
+    }
 
-function nextSlide() {
-    slideIndex++;
-    showSlides();
-}
+    function showNextSlide() {
+        updatePrevious();
+        currentSlide++;
+        showSlide();
+    }
 
+    function setCurrentSlide(index) {
+        updatePrevious();
+        currentSlide = index;
+        showSlide();
+    }
 
-function currentSlide(index) {
-    slideIndex = index;
-    showSlides();
-}
+    function showSlide() {
+        var slides = document.querySelectorAll('.slide');
+        var dots = document.querySelectorAll('.carousel-dot');
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        if (slides[previousSlide].classList.contains('fadeIn')) {
+            slides[previousSlide].classList.replace('fadeIn', 'fadeOut');
+        } else {
+            slides[previousSlide].classList.add('fadeOut');
+        }
+        dots.forEach(dot => dot.classList.remove('active'))
+        setTimeout(() => {
+            slides[previousSlide].classList.remove('active', 'fadeOut');
+            slides[currentSlide].classList.add('active', 'fadeIn');
+            dots[currentSlide].classList.add('active');
+            updatePrevious();
+        }, DELAY_IN_MILLISECONDS);
+    }
 
-
-function showSlides() {
-    var slides = document.querySelectorAll('.slide');
-    var dots = document.querySelectorAll('.carousel-dot');
-    if (slideIndex >= slides.length) slideIndex = 0;
-    if (slideIndex < 0) slideIndex = slides.length - 1;
-    slides.forEach(slide => slide.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'))
-    slides[slideIndex].classList.add('active');
-    dots[slideIndex].classList.add('active');
-} 
+    return {
+        showNextSlide,
+        setCurrentSlide,
+        showPreviousSlide
+    };
+})();
