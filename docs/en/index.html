@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript" src="/js/projects-handler.js"></script>
 </head>
 
 <body>
@@ -287,9 +288,9 @@
                     <h2>Public Projects</h2>
                 </div>
                 <div class='content buttons'>
-                    <button id='all' class='filter-button active' onclick='filterProjects(this.id)'>All</button>
-                    <button id='real' class='filter-button' onclick='filterProjects(this.id)'>Professional</button>
-                    <button id='personal' class='filter-button' onclick='filterProjects(this.id)'>Personal</button>
+                    <button id='all' class='filter-button active' onclick='projectsHandler.filter(this.id)'>All</button>
+                    <button id='real' class='filter-button' onclick='projectsHandler.filter(this.id)'>Professional</button>
+                    <button id='personal' class='filter-button' onclick='projectsHandler.filter(this.id)'>Personal</button>
                 </div>
                 <div class='content'>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
@@ -297,14 +298,30 @@
                             <div class='image-container'>
                                 <img alt='personal site' src='/img/personal-site2.png'>
                             </div>
-                            <div class='overlay'>
+                            <div class='overlay description'>
                                 <p class='paragraph-title'>Personal Website</p>
                                 <p class='paragraph-body'>
                                     My website: professional introduction of a software engineer.
                                 </p>
                             </div>
+                            <div class='overlay stack'>
+                                <p class='paragraph-title'>Stack</p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Hugo</li>
+                                        <li>JSON</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <button onclick='displayProjectInfo(this, "personal-website")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("personal-website")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("personal-website")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='oceans' class='project'>
@@ -313,16 +330,30 @@
                                     <img alt='oceans' src='/img/oceans.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Oceans</p>
                                     <p class='paragraph-body'>
                                         Portal of the Oceans aesthetic centre. Services, offers and contact details of
                                         the company are displayed.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>JSON</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "oceans")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("oceans")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("oceans")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='visor-geoportal' class='project'>
@@ -332,7 +363,7 @@
                                     <img alt='geoportal' src='/img/visor-geoportal.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Dynamic Viewer</p>
                                     <p class='paragraph-body'>
                                         ECOAQUA interactive web viewer, where you can consult coastal information from
@@ -341,9 +372,26 @@
                                         each map separately.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "visor-geoportal")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("visor-geoportal")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("visor-geoportal")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-ecoaqua' class='project'>
@@ -353,7 +401,7 @@
                                     <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Services List</p>
                                     <p class='paragraph-body'>
                                         Portal that lists the information on the coastal resources of the Canary Islands
@@ -361,9 +409,25 @@
                                         WFS, CSW, DWL format).
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-ecoaqua")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-ecoaqua")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-ecoaqua")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='marsp' class='project'>
@@ -372,7 +436,7 @@
                                     <img alt='marsp' src='/img/marsp.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Marsp</p>
                                     <p class='paragraph-body'>
                                         Portal of the MarSP Canarias platform. MarSP project intends to reinforce the
@@ -380,9 +444,23 @@
                                         processes in the three EU macaronesian archipelagos.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>jQuery</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "marsp")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("marsp")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("marsp")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='lanzarote' class='project'>
@@ -391,16 +469,33 @@
                                     <img alt='lanzarote' src='/img/lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Map Viewer</p>
                                     <p class='paragraph-body'>
                                         Interactive web viewer where you can consult the maps of the Spatial Data
                                         Infrastructure of Lanzarote.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                            <li>GeoServer</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "lanzarote")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("lanzarote")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("lanzarote")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-lanzarote' class='project'>
@@ -409,16 +504,31 @@
                                     <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Services List</p>
                                     <p class='paragraph-body'>
                                         Portal that lists the geographic information that the Spatial Data
                                         Infrastructure of Lanzarote offers (maps in WMS format).
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-lanzarote")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-lanzarote")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-lanzarote")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='runbots' class='project'>
@@ -428,16 +538,25 @@
                                     <img alt='runbots' src='/img/runbots.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Runbots</p>
                                     <p class='paragraph-body'>
                                         Single player game developed during the Ludum Dare 35 competition, with the
                                         theme "Shapeshift".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "runbots")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("runbots")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("runbots")'>Show Stack</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='pushfirst' class='project'>
@@ -447,16 +566,25 @@
                                     <img alt='pushfirst' src='/img/pushfirst.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>push first</p>
                                     <p class='paragraph-body'>
                                         Two players game developed during the Ludum Dare 34 competition, with the themes
                                         "Two Button Controls" or "Growing".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "pushfirst")'>Read more</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("pushfirst")'>Show description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("pushfirst")'>Show Stack</button>
                     </div>
                     <div class='project dummy'></div>
                     <div class='project dummy'></div>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript" src="/js/projects-handler.js"></script>
 </head>
 
 <body>
@@ -290,9 +291,9 @@
                     <h2>Proyectos P&uacute;blicos</h2>
                 </div>
                 <div class='content buttons'>
-                    <button id='all' class='filter-button active' onclick='filterProjects(this.id)'>Todos</button>
-                    <button id='real' class='filter-button' onclick='filterProjects(this.id)'>Profesionales</button>
-                    <button id='personal' class='filter-button' onclick='filterProjects(this.id)'>Personales</button>
+                    <button id='all' class='filter-button active' onclick='projectsHandler.filter(this.id)'>Todos</button>
+                    <button id='real' class='filter-button' onclick='projectsHandler.filter(this.id)'>Profesionales</button>
+                    <button id='personal' class='filter-button' onclick='projectsHandler.filter(this.id)'>Personales</button>
                 </div>
                 <div class='content'>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
@@ -300,14 +301,30 @@
                             <div class='image-container'>
                                 <img alt='personal site' src='/img/personal-site2.png'>
                             </div>
-                            <div class='overlay'>
+                            <div class='overlay description'>
                                 <p class='paragraph-title'>Web Personal</p>
                                 <p class='paragraph-body'>
                                     Mi p&aacute;gina web: presentaci&oacute;n profesional de un ingeniero de software.
                                 </p>
                             </div>
+                            <div class='overlay stack'>
+                                <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                <div class='paragraph-body'>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Hugo</li>
+                                        <li>JSON</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <button onclick='displayProjectInfo(this, "personal-website")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("personal-website")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("personal-website")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='oceans' class='project'>
@@ -316,16 +333,30 @@
                                     <img alt='oceans' src='/img/oceans.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Oceans</p>
                                     <p class='paragraph-body'>
                                         Portal del centro de est&eacute;tica Oceans. Se muestran los servicios, ofertas
                                         y datos de contacto de la empresa.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>JSON</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "oceans")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("oceans")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("oceans")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='visor-geoportal' class='project'>
@@ -335,7 +366,7 @@
                                     <img alt='geoportal' src='/img/visor-geoportal.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Visor Din&aacute;mico</p>
                                     <p class='paragraph-body'>
                                         Visor web interactivo de ECOAQUA, en el que se puede consultar
@@ -344,9 +375,26 @@
                                         introducir cada mapa por separado.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "visor-geoportal")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("visor-geoportal")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("visor-geoportal")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-ecoaqua' class='project'>
@@ -356,17 +404,32 @@
                                     <img alt='ecoaqua' src='/img/servicios-ecoaqua.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Lista de Servicios</p>
                                     <p class='paragraph-body'>
                                         Portal en el que se enumera la informaci&oacute;n sobre los recursos costeros de
-                                        Canarias que ofrece ECOAQUA
-                                        (datos en formato WMS, WFS, CSW, DWL).
+                                        Canarias que ofrece ECOAQUA (datos en formato WMS, WFS, CSW, DWL).
                                     </p>
+                                </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>JSON</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-ecoaqua")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-ecoaqua")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-ecoaqua")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='marsp' class='project'>
@@ -375,7 +438,7 @@
                                     <img alt='marsp' src='/img/marsp.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Marsp</p>
                                     <p class='paragraph-body'>
                                         Portal de la plataforma MarSP Canarias. El proyecto MarSP pretende reforzar los
@@ -383,9 +446,23 @@
                                         Mar&iacute;timo (OEM) en los tres archipi&eacute;lagos macaronesios de la UE.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <ul>
+                                            <li>jQuery</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "marsp")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("marsp")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("marsp")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='lanzarote' class='project'>
@@ -394,16 +471,33 @@
                                     <img alt='lanzarote' src='/img/lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Visor de Mapas</p>
                                     <p class='paragraph-body'>
                                         Visor web interactivo en el que se pueden consultar los mapas de la
                                         Infraestructura de Datos Espaciales de Lanzarote.
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>jQuery</li>
+                                            <li>OpenLayers</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                            <li>GeoServer</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "lanzarote")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("lanzarote")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("lanzarote")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "real"]'>
                         <div id='servicios-lanzarote' class='project'>
@@ -412,7 +506,7 @@
                                     <img alt='lanzarote 2' src='/img/servicios-lanzarote.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Lista de Servicios</p>
                                     <p class='paragraph-body'>
                                         Portal en el que se enumera la informaci&oacute;n geogr&aacute;fica que ofrece
@@ -420,9 +514,24 @@
                                         (mapas en formato WMS).
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "servicios-lanzarote")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("servicios-lanzarote")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("servicios-lanzarote")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='runbots' class='project'>
@@ -432,16 +541,25 @@
                                     <img alt='runbots' src='/img/runbots.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>Runbots</p>
                                     <p class='paragraph-body'>
                                         Videojuego para un jugador desarrollado durante la competici&oacute;n Ludum Dare
                                         35, con el tema "Cambio de forma".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "runbots")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("runbots")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("runbots")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='pushfirst' class='project'>
@@ -451,7 +569,7 @@
                                     <img alt='pushfirst' src='/img/pushfirst.png'>
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <div class='overlay'>
+                                <div class='overlay description'>
                                     <p class='paragraph-title'>push first</p>
                                     <p class='paragraph-body'>
                                         Videojuego para dos jugadores desarrollado durante la competici&oacute;n Ludum
@@ -459,9 +577,18 @@
                                         dos Botones" o "Crecimiento".
                                     </p>
                                 </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Tecnolog&iacute;as</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Construct 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <button onclick='displayProjectInfo(this, "pushfirst")'>Leer m&aacute;s</button>
+                        <button class='description' onclick='projectsHandler.toogleDescription("pushfirst")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("pushfirst")'>Mostrar Tecnolog&iacute;as</button>
                     </div>
                     <div class='project dummy'></div>
                     <div class='project dummy'></div>

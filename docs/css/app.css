@@ -1031,12 +1031,22 @@ section .content {
     background-color: inherit;
     border: 1px solid black;
     padding: 6px;
-    width: 50%;
+    width: 46%;
     margin-top: 6px;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 50px;
     font-weight: bold;
+}
+
+.project-wrapper button.description {
+    margin-left: 6px;
+    margin-right: 3px;
+}
+
+.project-wrapper button.stack {
+    margin-left: 3px;
+    margin-right: 6px;
 }
 
 .project-wrapper button:hover, .project-wrapper button:focus, .project-wrapper button.active {
@@ -1104,7 +1114,7 @@ section .content {
 }
 
 .project .overlay {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.82);
     padding: 18px;
     height: calc(100% - 36px);
     width: calc(100% - 36px);
@@ -1134,11 +1144,18 @@ section .content {
     -webkit-transform: translateY(100%);
 }
 
-.project.active .overlay {
+.project.active.description .overlay.description, .project.active.stack .overlay.stack {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+}
+
+.project .overlay.stack ul {
+    display: inline-block;
+    margin: auto;
+    margin-right: 25px;
+    vertical-align: top;
 }
 
 .project .paragraph-title {
@@ -1153,6 +1170,7 @@ section .content {
 
 .project .paragraph-body {
     font-size: 16px;
+    min-height: 78px;
 }
 
 .project p {
