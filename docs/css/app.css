@@ -1441,3 +1441,37 @@ section .content {
     -o-transition: all 0.25s ease-in-out 0.1s;
     transition: all 0.25s ease-in-out 0.1s;
 }
+
+.statistics-wrapper {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.statistics {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    max-width: 150px;
+}
+
+.statistics.middle {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.statistics .icon {
+    font-size: 35px;
+    text-align: center;
+    color: #22a39f;
+}
+
+.statistics .text {
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+}
