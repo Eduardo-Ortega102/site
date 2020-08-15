@@ -165,10 +165,6 @@
     .referral {
         min-height: 480px;
     }
-    .statistics {
-        width: 100%;
-        max-width: 100%;
-    }
 }
 
 @media (max-width: 390px) {
@@ -215,6 +211,28 @@
         background-color: #e9e5e5;
         width: 70%;
         border-radius: 6px;
+    }
+    .statistics {
+        width: 100%;
+        max-width: 100%;
+    }
+    .cornerstone-container {
+        flex-direction: column;
+    }
+    .cornerstone {
+        width: 230px;
+        max-width: 230px;
+        height: unset;
+        display: flex;
+        align-items: center;
+    }
+    .cornerstone img {
+        max-width: 96px;
+        margin-bottom: 0px;
+        margin-right: 8px;
+    }
+    .cornerstone.changelog img {
+        margin-right: 20px;
     }
 }
 
