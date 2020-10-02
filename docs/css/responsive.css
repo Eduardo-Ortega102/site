@@ -1,5 +1,23 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+@media(max-width: 900px) {
+    .stack-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width: 750px) {
+    .stack-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .stack-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media(max-width: 500px) {
     .title {
         font-size: 2.4rem;
@@ -8,10 +26,8 @@
         font-size: 1.3rem;
     }
     .stack-container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        row-gap: 0px;
     }
     .project-wrapper {
         margin-left: 8px;
