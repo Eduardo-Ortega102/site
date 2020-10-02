@@ -1,19 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 @media(max-width: 900px) {
     .stack-container {
+        -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media(max-width: 750px) {
     .stack-container {
+        -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media(max-width: 600px) {
     .stack-container {
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -26,6 +36,7 @@
         font-size: 1.3rem;
     }
     .stack-container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         row-gap: 0px;
     }
@@ -115,7 +126,10 @@
 
 @media (max-width: 660px) {
     .referral {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 48px;
     }
     .carousel-prev, .carousel-next {
@@ -233,14 +247,21 @@
         max-width: 100%;
     }
     .cornerstone-container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .cornerstone {
         width: 230px;
         max-width: 230px;
         height: unset;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .cornerstone img {
         max-width: 96px;
