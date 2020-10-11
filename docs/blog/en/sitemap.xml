@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/en/</loc>
-    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -19,23 +19,8 @@
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</loc>
-    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/17-days-running-google-colab/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.theagilecrafter.com/blog/en/categories/</loc>
-    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -51,7 +36,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/en/post/</loc>
-    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -62,6 +47,100 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.theagilecrafter.com/blog/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</loc>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/remove-duplicates-from-an-array-with-javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/algorithm/</loc>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/algorithm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/algorithm/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/javascript/</loc>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/javascript/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/programming/</loc>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/programming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/programming/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/tips/</loc>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/tips/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</loc>
+    <lastmod>2020-08-12T15:01:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/17-days-running-google-colab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/"
                 />
   </url>
   

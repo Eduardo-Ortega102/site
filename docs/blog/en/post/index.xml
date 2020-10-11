@@ -6,10 +6,20 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2020 15:01:11 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 23:51:21 +0100</lastBuildDate>
     
 	<atom:link href="https://www.theagilecrafter.com/blog/en/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Remove Duplicates from an Array with JavaScript</title>
+      <link>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</link>
+      <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</guid>
+      <description>This way of removing duplicates is quite simple and elegant, thanks to the methods Array.filter() and Array.indexOf().
+The Array.filter() method creates a new array from an existing one, which contains only the elements that meet the filter criteria. The Array.indexOf() method, on the other hand, returns the index of the first element of an array whose value matches the one passed to it as a parameter.</description>
+    </item>
     
     <item>
       <title>17 days running Google Colab</title>
