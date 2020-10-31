@@ -195,6 +195,12 @@
     .referral {
         min-height: 480px;
     }
+    .links-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 8px;
+    }
 }
 
 @media (max-width: 390px) {
