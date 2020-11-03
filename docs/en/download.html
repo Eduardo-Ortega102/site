@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eduardo Ortega Naranjo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" href="/css/3.7.2.animate.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script type="text/javascript" src="/js/functions.js"></script>
+</head>
+
+<body>
+    <!--
+		                                              .-'''-.        ___
+		                                .---..---.   '   _    \   .'/   \
+		   .              __.....__     |   ||   | /   /` '.   \ / /     \
+		 .'|          .-''         '.   |   ||   |.   |     \  ' | |     |
+		<  |         /     .-''"'-.  `. |   ||   ||   '      |  '| |     |
+		 | |        /     /________\   \|   ||   |\    \     / / |/`.   .'
+		 | | .'''-. |                  ||   ||   | `.   ` ..' /   `.|   |
+		 | |/.'''. \\    .-------------'|   ||   |    '-...-'`     ||___|
+		 |  /    | | \    '-.____...---.|   ||   |                 |/___/
+		 | |     | |  `.             .' |   ||   |                 .'.--.
+		 | |     | |    `''-...... -'   '---''---'                | |    |
+		 | '.    | '.                                             \_\    /
+		 '---'   '---'                                             `''--'
+
+
+	Hi there! I'm glad that you are taking a look at the source code of this page!
+  -->
+    <div class='browser-unsuported'>
+        <div class='banner'>
+            <div class='english'>
+                <h1>Oops! There is a problem!</h1>
+                <p>
+                    You are using an outdated browser.
+                    Please upgrade your browser to view this website.
+                </p>
+                <p><u><strong>If you are using Internet Explorer, switch to another browser.</strong></u></p>
+                <p>You can use, for example, any of these:</p>
+                <div class='browser-container'>
+                    <div class='browser'>
+                        <img src='/img/chrome.png' alt='chrome'>
+                        <h2>GOOGLE CHROME</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/firefox.png' alt='firefox'>
+                        <h2>MOZILLA FIREFOX</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/safari.png' alt='safari'>
+                        <h2>SAFARI</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/opera.png' alt='opera'>
+                        <h2>OPERA</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/edge.png' alt='edge'>
+                        <h2>MICROSOFT EDGE</h2>
+                    </div>
+                </div>
+            </div>
+            <div class='spanish'>
+                <h1>¡Vaya! ¡Hay un problema!</h1>
+                <p>
+                    Est&aacute;s usando un navegador anticuado.
+                    Por favor, actualiza tu navegador para ver &eacute;sta web.
+                </p>
+                <p><u><strong>Si est&aacute;s usando Internet Explorer, cambia de navegador.</strong></u></p>
+                <p>Puedes usar, por ejemplo, cualquiera de estos:</p>
+                <div class='browser-container'>
+                    <div class='browser'>
+                        <img src='/img/chrome.png' alt='chrome'>
+                        <h2>GOOGLE CHROME</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/firefox.png' alt='firefox'>
+                        <h2>MOZILLA FIREFOX</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/safari.png' alt='safari'>
+                        <h2>SAFARI</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/opera.png' alt='opera'>
+                        <h2>OPERA</h2>
+                    </div>
+                    <div class='browser'>
+                        <img src='/img/edge.png' alt='edge'>
+                        <h2>MICROSOFT EDGE</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id='navigation-bar' class='navigation-bar'>
+        <div class='content-wrapper'>
+            <div class='main-buttons'>
+                <a class='brand navigation-link' href="https://www.theagilecrafter.com/en/">Home</a>
+                <a id='menu-switch' href='javascript:void(0);' class='icon' onclick="toggleMenu()">
+                    <div class='mobile-menu'>
+                        <div class='horizontal-bar'></div>
+                        <div class='horizontal-bar margin'></div>
+                        <div class='horizontal-bar'></div>
+                    </div>
+                </a>
+            </div>
+            <div class='navigation-content animated fast'>
+                <div class='navigation-buttons'>
+                    <a class='navigation-link' href="https://www.theagilecrafter.com/en/#about-me">About me</a>
+                    <a class='navigation-link' href="https://www.theagilecrafter.com/en/#stack">Stack</a>
+                    <a class='navigation-link' href="https://www.theagilecrafter.com/en/#experience">Experience</a>
+                    <a class='navigation-link' href="https://www.theagilecrafter.com/en/#referrals">Referrals</a>
+                    <a class='navigation-link' href="https://www.theagilecrafter.com/en/#contact">Contact</a>
+                    <div class="dropdown" onclick="openLanguageMenu()">
+                        Language
+                        <i class="fa fa-caret-down"></i>
+                        <div id="languageDropdown" class="dropdown-content animated fast">
+                            <a onclick="changeLanguage('es')">Español</a>
+                            <a onclick="changeLanguage('en')" class='current-language'>English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .main-header.download, .download > * {
+            min-height: 290px;
+            max-height: 424px;
+        }
+        #downloads .paragraph {
+            min-width: 70%;
+        }
+        #downloads a {
+            color: black;
+            font-family: "Roboto Slab", serif;
+        }
+        #downloads li {
+            margin: 16px 0px;
+        }
+    </style>
+    <header id='main-header' class="main-header download">
+        <div class="content-background">
+            <div class="content-wrapper">
+                <h1 class="title">Eduardo Ortega Naranjo</h1>
+                <div class="links-bar">
+                    <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
+                    <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
+                    <a class="link button" href="https://medium.com/the-agile-crafter"><i class="fab fa-medium-m"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id='main-content'>
+        <section id='downloads'>
+            <div class='content-wrapper'>
+                <div class='section-title'>
+                    <h2>DOWNLOADS</h2>
+                </div>
+                <div class='content'>
+                    <div class="paragraph big">
+                        <div class="paragraph-body">
+                            <ul>
+                                <li><a href="https://www.theagilecrafter.com/downloads/docker-cheatsheet-v2-yodralopez.pdf">Docker Cheatsheet</a></li>
+                                <li><a href="https://www.theagilecrafter.com/downloads/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">Git Cheatsheet</a></li>
+                                <li><a href="https://www.theagilecrafter.com/downloads/keyboard-shortcuts-windows.pdf">Visual Studio Code Shortcuts</a></li>
+                                <li><a href="https://www.theagilecrafter.com/downloads/IntelliJIDEA_ReferenceCard.pdf">IntelliJ IDEA Reference Card</a></li>
+                                <li><a href="https://www.theagilecrafter.com/downloads/vim-cheatsheet.pdf">Vim Cheatsheet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="media">
+            <a class="link button" href="https://github.com/Eduardo-Ortega102"><i class="fab fa-github"></i></a>
+            <a class="link button" href="https://es.linkedin.com/in/eortegan/en/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="link button" href="https://twitter.com/agilecrafter"><i class="fab fa-twitter"></i></a>
+            <a class="link button" href="https://medium.com/the-agile-crafter"><i class="fab fa-medium-m"></i></a>
+        </div>
+        <div class='copyright'>
+            <p>Copyright &copy; 2020 </p>
+            <p>Eduardo Ortega Naranjo</p>
+        </div>
+        <div>
+            <p><a class="link decorated" href="https://www.theagilecrafter.com/en/download.html">Downloads</a></p>
+            <p>All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
