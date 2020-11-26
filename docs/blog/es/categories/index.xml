@@ -6,10 +6,55 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 11 Oct 2020 23:51:21 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2020 15:01:11 +0100</lastBuildDate>
     
 	<atom:link href="https://www.theagilecrafter.com/blog/es/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>devops</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/devops/</link>
+      <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/docker/</link>
+      <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dockerfiles</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/dockerfiles/</link>
+      <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/dockerfiles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/optimization/</link>
+      <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://www.theagilecrafter.com/blog/es/categories/tips/</link>
+      <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/es/categories/tips/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -35,15 +80,6 @@
       <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
       
       <guid>https://www.theagilecrafter.com/blog/es/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>https://www.theagilecrafter.com/blog/es/categories/tips/</link>
-      <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
-      
-      <guid>https://www.theagilecrafter.com/blog/es/categories/tips/</guid>
       <description></description>
     </item>
     

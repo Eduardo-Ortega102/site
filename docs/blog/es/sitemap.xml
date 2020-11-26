@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/es/</loc>
-    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -20,7 +20,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/es/categories/</loc>
-    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -31,6 +31,117 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://www.theagilecrafter.com/blog/es/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/post/optimizaci%C3%B3n-de-im%C3%A1genes-de-docker-de-1.16-gb-a-22.4-mb/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/optimizaci%C3%B3n-de-im%C3%A1genes-de-docker-de-1.16-gb-a-22.4-mb/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/post/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/categories/devops/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/categories/docker/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/docker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/docker/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/categories/dockerfiles/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/dockerfiles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/dockerfiles/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/categories/optimization/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/optimization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/optimization/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/es/categories/tips/</loc>
+    <lastmod>2020-11-01T15:01:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/tips/"
                 />
   </url>
   
@@ -46,22 +157,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://www.theagilecrafter.com/blog/es/post/remove-duplicates-from-an-array-with-javascript/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.theagilecrafter.com/blog/es/post/</loc>
-    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/"
                 />
   </url>
   
@@ -110,22 +205,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://www.theagilecrafter.com/blog/es/categories/programming/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.theagilecrafter.com/blog/es/categories/tips/</loc>
-    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/tips/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/tips/"
                 />
   </url>
   
