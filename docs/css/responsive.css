@@ -6,21 +6,21 @@
 */
 
 
-@media(max-width: 900px) {
+@media(max-width: 990px) {
     .stack-container {
         -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 816px) {
     .stack-container {
         -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 627px) {
     .stack-container {
         -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);

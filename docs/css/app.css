@@ -592,6 +592,10 @@ section .content {
 .paragraph-title {
     font-weight: bold;
     font-size: 24px;
+    text-align: left;
+}
+.paragraph-title span {
+    font-size: 18px;
 }
 
 .paragraph-body {
