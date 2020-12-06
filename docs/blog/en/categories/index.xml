@@ -6,10 +6,46 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Nov 2020 15:01:11 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 18:04:49 +0000</lastBuildDate>
     
 	<atom:link href="https://www.theagilecrafter.com/blog/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>clean-code</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/clean-code/</link>
+      <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/clean-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/css/</link>
+      <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/react/</link>
+      <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/tips/</link>
+      <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/tips/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>devops</title>
@@ -44,15 +80,6 @@
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
       <guid>https://www.theagilecrafter.com/blog/en/categories/optimization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/tips/</link>
-      <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
-      
-      <guid>https://www.theagilecrafter.com/blog/en/categories/tips/</guid>
       <description></description>
     </item>
     
