@@ -1495,15 +1495,11 @@ section .content {
 
 .statistics {
     display: inline-block;
-    margin-left: 8px;
-    margin-right: 8px;
-    max-width: 150px;
+    max-width: 174px;
+    width: 100%;
+    margin: 11px 8px;
 }
 
-.statistics.middle {
-    margin-top: 22px;
-    margin-bottom: 22px;
-}
 
 .statistics .icon {
     font-size: 35px;
