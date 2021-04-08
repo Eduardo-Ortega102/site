@@ -300,6 +300,40 @@
                     <button id='personal' class='filter-button' onclick='projectsHandler.filter(this.id)'>Personal</button>
                 </div>
                 <div class='content'>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='staffnow' class='project'>
+                            <a href='https://staffnow.aero/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='staffnow' src='/img/staffnow.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay description'>
+                                    <p class='paragraph-title'>StaffNow</p>
+                                    <p class='paragraph-body'>
+                                        The first specialized online platform referring to aircraft maintenance, designed for freelance technicians and repair organizations. It offers direct connection between parties, automated recruitment processes and faster onboarding.
+                                    </p>
+                                </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Angular</li>
+                                            <li>Spring (Java)</li>
+                                        </ul>
+                                        <ul style="margin-right: 35px;">
+                                            <li>MySQL</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Amazon Web Services</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button class='description' onclick='projectsHandler.toogleDescription("staffnow")'>Show Description</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("staffnow")'>Show Stack</button>
+                    </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='personal-website' class='project'>
                             <div class='image-container'>

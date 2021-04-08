@@ -300,6 +300,41 @@
                     <button id='personal' class='filter-button' onclick='projectsHandler.filter(this.id)'>Personales</button>
                 </div>
                 <div class='content'>
+                    <div class='project-wrapper' data-categories='["web", "real"]'>
+                        <div id='staffnow' class='project'>
+                            <a href='https://staffnow.aero/' target='_blank' rel='noopener noreferrer'>
+                                <div class='image-container'>
+                                    <img alt='staffnow' src='/img/staffnow.png'>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                                <div class='overlay description'>
+                                    <p class='paragraph-title'>StaffNow</p>
+                                    <p class='paragraph-body'>
+                                        La primera plataforma online especializada en el mantenimiento de aviones, dise&ntilde;ada para t&eacute;cnicos y organizaciones de reparaci&oacute;n. Ofrece conexi&oacute;n directa entre las partes, procesos de contrataci&oacute;n automatizados y una
+                                        incorporaci&oacute;n m&aacute;s r&aacute;pida.
+                                    </p>
+                                </div>
+                                <div class='overlay stack'>
+                                    <p class='paragraph-title'>Stack</p>
+                                    <div class='paragraph-body'>
+                                        <ul>
+                                            <li>Angular</li>
+                                            <li>Spring (Java)</li>
+                                        </ul>
+                                        <ul style="margin-right: 35px;">
+                                            <li>MySQL</li>
+                                            <li>Docker</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Amazon Web Services</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button class='description' onclick='projectsHandler.toogleDescription("staffnow")'>Mostrar Descripci&oacute;n</button>
+                        <button class='stack' onclick='projectsHandler.toogleStack("staffnow")'>Mostrar Tecnolog&iacute;as</button>
+                    </div>
                     <div class='project-wrapper' data-categories='["web", "personal"]'>
                         <div id='personal-website' class='project'>
                             <div class='image-container'>
@@ -608,8 +643,8 @@
                                 <div class='paragraph-body'>
                                     <ul>
                                         <li>Desarrollo de software (Java, Angular)</li>
-                                        <li>Desarrollo y mantenimiento de test automáticos (Java, Mockito, assertJ)</li>
-                                        <li>Refactorización de código heredado (Java)</li>
+                                        <li>Desarrollo y mantenimiento de test autom&aacute;ticos (Java, Mockito, assertJ)</li>
+                                        <li>Refactorizaci&oacute;n de c&oacute;digo heredado (Java)</li>
                                     </ul>
                                 </div>
                                 <span class='aditional-info'>
