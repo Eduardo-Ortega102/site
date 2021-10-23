@@ -1,0 +1,44 @@
+.main-header.download,
+.download>* {
+    min-height: 290px;
+    max-height: 424px;
+}
+
+.main-header.download {
+    background-position-y: center;
+}
+
+.resource-list {
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downloadable-resource {
+    width: 80%;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 8px 0px !important;
+    color: black;
+    background-color: #f9f9f7;
+    border: 1px solid #d1d0cf;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+}
+
+.downloadable-resource:hover {
+    background-color: #e3e1e0;
+}
+
+.downloadable-resource i {
+    margin-right: 14px;
+}
+
+.downloadable-resource span {
+    font-family: inherit;
+    letter-spacing: inherit;
+    width: 100%;
+}
