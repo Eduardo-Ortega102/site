@@ -6,10 +6,46 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Dec 2020 18:04:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Feb 2022 12:19:11 +0100</lastBuildDate>
     
 	<atom:link href="https://www.theagilecrafter.com/blog/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>junit</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/junit/</link>
+      <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/junit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maven</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/maven/</link>
+      <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring-boot</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/spring-boot/</link>
+      <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://www.theagilecrafter.com/blog/en/categories/testing/</link>
+      <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
+      
+      <guid>https://www.theagilecrafter.com/blog/en/categories/testing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>clean-code</title>

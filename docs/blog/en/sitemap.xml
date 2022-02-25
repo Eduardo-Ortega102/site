@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/en/</loc>
-    <lastmod>2020-12-06T18:04:49+00:00</lastmod>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -20,7 +20,7 @@
   
   <url>
     <loc>https://www.theagilecrafter.com/blog/en/categories/</loc>
-    <lastmod>2020-12-06T18:04:49+00:00</lastmod>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -35,8 +35,23 @@
   </url>
   
   <url>
+    <loc>https://www.theagilecrafter.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</loc>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/post/how-to-add-integration-tests-to-our-spring-boot-backend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.theagilecrafter.com/blog/en/post/</loc>
-    <lastmod>2020-12-06T18:04:49+00:00</lastmod>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -47,6 +62,70 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.theagilecrafter.com/blog/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/junit/</loc>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/junit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/junit/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/maven/</loc>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/maven/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/maven/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/spring-boot/</loc>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/spring-boot/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/spring-boot/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagilecrafter.com/blog/en/categories/testing/</loc>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagilecrafter.com/blog/es/categories/testing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagilecrafter.com/blog/en/categories/testing/"
                 />
   </url>
   
