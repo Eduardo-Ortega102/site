@@ -3,444 +3,444 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/"
+                href="https://www.theagileartisan.com/blog/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/"
+                href="https://www.theagileartisan.com/blog/en/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/"
+                href="https://www.theagileartisan.com/blog/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/"
+                href="https://www.theagileartisan.com/blog/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/how-to-add-integration-tests-to-our-spring-boot-backend/"
+                href="https://www.theagileartisan.com/blog/es/post/how-to-add-integration-tests-to-our-spring-boot-backend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/"
+                href="https://www.theagileartisan.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/</loc>
-    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/junit/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/post/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/junit/"
+                href="https://www.theagileartisan.com/blog/es/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/junit/"
+                href="https://www.theagileartisan.com/blog/en/post/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/maven/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/junit/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/maven/"
+                href="https://www.theagileartisan.com/blog/es/categories/junit/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/maven/"
+                href="https://www.theagileartisan.com/blog/en/categories/junit/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/spring-boot/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/maven/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/spring-boot/"
+                href="https://www.theagileartisan.com/blog/es/categories/maven/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/spring-boot/"
+                href="https://www.theagileartisan.com/blog/en/categories/maven/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/testing/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/spring-boot/</loc>
     <lastmod>2022-02-24T12:19:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/testing/"
+                href="https://www.theagileartisan.com/blog/es/categories/spring-boot/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/testing/"
+                href="https://www.theagileartisan.com/blog/en/categories/spring-boot/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/react-components-add-css-with-clean-code/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/testing/</loc>
+    <lastmod>2022-02-24T12:19:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagileartisan.com/blog/es/categories/testing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagileartisan.com/blog/en/categories/testing/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagileartisan.com/blog/en/post/react-components-add-css-with-clean-code/</loc>
     <lastmod>2020-12-06T18:04:49+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/componentes-de-react-a%C3%B1adir-css-con-c%C3%B3digo-limpio/"
+                href="https://www.theagileartisan.com/blog/es/post/componentes-de-react-a%C3%B1adir-css-con-c%C3%B3digo-limpio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/react-components-add-css-with-clean-code/"
+                href="https://www.theagileartisan.com/blog/en/post/react-components-add-css-with-clean-code/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/clean-code/</loc>
-    <lastmod>2020-12-06T18:04:49+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/clean-code/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/clean-code/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/css/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/clean-code/</loc>
     <lastmod>2020-12-06T18:04:49+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/css/"
+                href="https://www.theagileartisan.com/blog/es/categories/clean-code/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/css/"
+                href="https://www.theagileartisan.com/blog/en/categories/clean-code/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/react/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/css/</loc>
     <lastmod>2020-12-06T18:04:49+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/react/"
+                href="https://www.theagileartisan.com/blog/es/categories/css/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/react/"
+                href="https://www.theagileartisan.com/blog/en/categories/css/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/tips/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/react/</loc>
     <lastmod>2020-12-06T18:04:49+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/tips/"
+                href="https://www.theagileartisan.com/blog/es/categories/react/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/tips/"
+                href="https://www.theagileartisan.com/blog/en/categories/react/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/tips/</loc>
+    <lastmod>2020-12-06T18:04:49+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagileartisan.com/blog/es/categories/tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagileartisan.com/blog/en/categories/tips/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagileartisan.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</loc>
     <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/optimizaci%C3%B3n-de-im%C3%A1genes-de-docker-de-1.16-gb-a-22.4-mb/"
+                href="https://www.theagileartisan.com/blog/es/post/optimizaci%C3%B3n-de-im%C3%A1genes-de-docker-de-1.16-gb-a-22.4-mb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/"
+                href="https://www.theagileartisan.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/devops/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/devops/</loc>
     <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/devops/"
+                href="https://www.theagileartisan.com/blog/es/categories/devops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/devops/"
+                href="https://www.theagileartisan.com/blog/en/categories/devops/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/docker/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/docker/</loc>
     <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/docker/"
+                href="https://www.theagileartisan.com/blog/es/categories/docker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/docker/"
+                href="https://www.theagileartisan.com/blog/en/categories/docker/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/dockerfiles/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/dockerfiles/</loc>
     <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/dockerfiles/"
+                href="https://www.theagileartisan.com/blog/es/categories/dockerfiles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/dockerfiles/"
+                href="https://www.theagileartisan.com/blog/en/categories/dockerfiles/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/optimization/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/optimization/</loc>
     <lastmod>2020-11-01T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/optimization/"
+                href="https://www.theagileartisan.com/blog/es/categories/optimization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/optimization/"
+                href="https://www.theagileartisan.com/blog/en/categories/optimization/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</loc>
     <lastmod>2020-10-11T23:51:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/remove-duplicates-from-an-array-with-javascript/"
+                href="https://www.theagileartisan.com/blog/es/post/remove-duplicates-from-an-array-with-javascript/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/"
+                href="https://www.theagileartisan.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/algorithm/</loc>
-    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/algorithm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/algorithm/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/javascript/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/algorithm/</loc>
     <lastmod>2020-10-11T23:51:21+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/javascript/"
+                href="https://www.theagileartisan.com/blog/es/categories/algorithm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/javascript/"
+                href="https://www.theagileartisan.com/blog/en/categories/algorithm/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/programming/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/javascript/</loc>
     <lastmod>2020-10-11T23:51:21+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/programming/"
+                href="https://www.theagileartisan.com/blog/es/categories/javascript/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/programming/"
+                href="https://www.theagileartisan.com/blog/en/categories/javascript/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/programming/</loc>
+    <lastmod>2020-10-11T23:51:21+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://www.theagileartisan.com/blog/es/categories/programming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.theagileartisan.com/blog/en/categories/programming/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.theagileartisan.com/blog/en/post/17-days-running-google-colab/</loc>
     <lastmod>2020-08-12T15:01:11+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/17-days-running-google-colab/"
+                href="https://www.theagileartisan.com/blog/es/post/17-days-running-google-colab/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/"
+                href="https://www.theagileartisan.com/blog/en/post/17-days-running-google-colab/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/googlecolab/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/googlecolab/</loc>
     <lastmod>2020-08-12T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/googlecolab/"
+                href="https://www.theagileartisan.com/blog/es/categories/googlecolab/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/googlecolab/"
+                href="https://www.theagileartisan.com/blog/en/categories/googlecolab/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/machinelearning/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/machinelearning/</loc>
     <lastmod>2020-08-12T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/machinelearning/"
+                href="https://www.theagileartisan.com/blog/es/categories/machinelearning/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/machinelearning/"
+                href="https://www.theagileartisan.com/blog/en/categories/machinelearning/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/python/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/python/</loc>
     <lastmod>2020-08-12T15:01:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/python/"
+                href="https://www.theagileartisan.com/blog/es/categories/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/python/"
+                href="https://www.theagileartisan.com/blog/en/categories/python/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/post/my-first-post/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/post/my-first-post/</loc>
     <lastmod>2020-08-02T15:07:55+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/post/my-first-post/"
+                href="https://www.theagileartisan.com/blog/es/post/my-first-post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/post/my-first-post/"
+                href="https://www.theagileartisan.com/blog/en/post/my-first-post/"
                 />
   </url>
   
   <url>
-    <loc>https://www.theagilecrafter.com/blog/en/categories/apprenticeship/</loc>
+    <loc>https://www.theagileartisan.com/blog/en/categories/apprenticeship/</loc>
     <lastmod>2020-08-02T15:07:55+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://www.theagilecrafter.com/blog/es/categories/apprenticeship/"
+                href="https://www.theagileartisan.com/blog/es/categories/apprenticeship/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.theagilecrafter.com/blog/en/categories/apprenticeship/"
+                href="https://www.theagileartisan.com/blog/en/categories/apprenticeship/"
                 />
   </url>
   

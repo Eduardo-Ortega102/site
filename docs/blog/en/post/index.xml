@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>https://www.theagilecrafter.com/blog/en/post/</link>
+    <link>https://www.theagileartisan.com/blog/en/post/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 24 Feb 2022 12:19:11 +0100</lastBuildDate>
     
-	<atom:link href="https://www.theagilecrafter.com/blog/en/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.theagileartisan.com/blog/en/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to add Integration Tests to our Spring Boot backend</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</link>
       <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/how-to-add-integration-tests-to-our-spring-boot-backend/</guid>
       <description>Spring Data JPA allows us to write queries to the database in several ways. The simplest option is to use inferred queries, where Spring creates the query from the repository’s method name, but there are occasions where we need more complex queries and we must write them directly using JPQL or native SQL.</description>
     </item>
     
     <item>
       <title>React components: add CSS with clean code</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/react-components-add-css-with-clean-code/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/react-components-add-css-with-clean-code/</link>
       <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/react-components-add-css-with-clean-code/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/react-components-add-css-with-clean-code/</guid>
       <description>When it comes to designing applications with React, there are many ways to add style to components. The ones I knew so far were the following:
  Import a CSS file with the necessary classes and use the JSX property “className” to add them to the component.</description>
     </item>
     
     <item>
       <title>Docker Image Optimization: from 1.16GB to 22.4MB</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</link>
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</guid>
       <description>Docker is a platform for software developers and sysadmins to build, run, and share applications with containers. A container is a process that runs in an isolated environment, on its own filesystem; that filesystem is built using a docker image. Images include everything you need to run an application (compiled code, dependencies, libraries, etc.</description>
     </item>
     
     <item>
       <title>Remove Duplicates from an Array with JavaScript</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</link>
       <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</guid>
       <description>This way of removing duplicates is quite simple and elegant, thanks to the methods Array.filter() and Array.indexOf().
 The Array.filter() method creates a new array from an existing one, which contains only the elements that meet the filter criteria. The Array.indexOf() method, on the other hand, returns the index of the first element of an array whose value matches the one passed to it as a parameter.</description>
     </item>
     
     <item>
       <title>17 days running Google Colab</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/17-days-running-google-colab/</link>
       <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/17-days-running-google-colab/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/17-days-running-google-colab/</guid>
       <description>For my degree dissertation at the university, I need to run several experiments with different models of neural networks and download compressed files with the results and models learned, for this I am using an environment known as Google Collaboratory or Google Colab.</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/my-first-post/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/my-first-post/</link>
       <pubDate>Sun, 02 Aug 2020 15:07:55 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/my-first-post/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/my-first-post/</guid>
       <description>Hello, everybody! Especially my future self. I have decided that in the first post of my blog I am going to explain why I am writing it and what I hope to achieve with it.
 First of all, I intend this blog to be an online notebook in which I will document theoretical and practical concepts about software development and computing in general.</description>
     </item>

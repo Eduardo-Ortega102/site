@@ -2,183 +2,183 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on </title>
-    <link>https://www.theagilecrafter.com/blog/en/categories/</link>
+    <link>https://www.theagileartisan.com/blog/en/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 24 Feb 2022 12:19:11 +0100</lastBuildDate>
     
-	<atom:link href="https://www.theagilecrafter.com/blog/en/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.theagileartisan.com/blog/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>junit</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/junit/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/junit/</link>
       <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/junit/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/junit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maven</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/maven/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/maven/</link>
       <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/maven/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spring-boot</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/spring-boot/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/spring-boot/</link>
       <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/spring-boot/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/spring-boot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/testing/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/testing/</link>
       <pubDate>Thu, 24 Feb 2022 12:19:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/testing/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>clean-code</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/clean-code/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/clean-code/</link>
       <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/clean-code/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/clean-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/css/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/css/</link>
       <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/css/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>react</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/react/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/react/</link>
       <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/react/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tips</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/tips/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/tips/</link>
       <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/tips/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>devops</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/devops/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/devops/</link>
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/devops/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/docker/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/docker/</link>
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/docker/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dockerfiles</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/dockerfiles/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/dockerfiles/</link>
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/dockerfiles/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/dockerfiles/</guid>
       <description></description>
     </item>
     
     <item>
       <title>optimization</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/optimization/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/optimization/</link>
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/optimization/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/optimization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>algorithm</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/algorithm/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/algorithm/</link>
       <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/algorithm/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/javascript/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/javascript/</link>
       <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/javascript/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/programming/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/programming/</link>
       <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/programming/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>googlecolab</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/googlecolab/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/googlecolab/</link>
       <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/googlecolab/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/googlecolab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machinelearning</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/machinelearning/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/machinelearning/</link>
       <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/machinelearning/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/machinelearning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/python/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/python/</link>
       <pubDate>Wed, 12 Aug 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/python/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apprenticeship</title>
-      <link>https://www.theagilecrafter.com/blog/en/categories/apprenticeship/</link>
+      <link>https://www.theagileartisan.com/blog/en/categories/apprenticeship/</link>
       <pubDate>Sun, 02 Aug 2020 15:07:55 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/categories/apprenticeship/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/categories/apprenticeship/</guid>
       <description></description>
     </item>
     

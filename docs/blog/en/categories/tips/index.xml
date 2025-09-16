@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tips on </title>
-    <link>https://www.theagilecrafter.com/blog/en/categories/tips/</link>
+    <link>https://www.theagileartisan.com/blog/en/categories/tips/</link>
     <description>Recent content in tips on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 06 Dec 2020 18:04:49 +0000</lastBuildDate>
     
-	<atom:link href="https://www.theagilecrafter.com/blog/en/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.theagileartisan.com/blog/en/categories/tips/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>React components: add CSS with clean code</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/react-components-add-css-with-clean-code/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/react-components-add-css-with-clean-code/</link>
       <pubDate>Sun, 06 Dec 2020 18:04:49 +0000</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/react-components-add-css-with-clean-code/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/react-components-add-css-with-clean-code/</guid>
       <description>When it comes to designing applications with React, there are many ways to add style to components. The ones I knew so far were the following:
  Import a CSS file with the necessary classes and use the JSX property “className” to add them to the component.</description>
     </item>
     
     <item>
       <title>Docker Image Optimization: from 1.16GB to 22.4MB</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</link>
       <pubDate>Sun, 01 Nov 2020 15:01:11 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/docker-image-optimization-from-1.16gb-to-22.4mb/</guid>
       <description>Docker is a platform for software developers and sysadmins to build, run, and share applications with containers. A container is a process that runs in an isolated environment, on its own filesystem; that filesystem is built using a docker image. Images include everything you need to run an application (compiled code, dependencies, libraries, etc.</description>
     </item>
     
     <item>
       <title>Remove Duplicates from an Array with JavaScript</title>
-      <link>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</link>
+      <link>https://www.theagileartisan.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</link>
       <pubDate>Sun, 11 Oct 2020 23:51:21 +0100</pubDate>
       
-      <guid>https://www.theagilecrafter.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</guid>
+      <guid>https://www.theagileartisan.com/blog/en/post/remove-duplicates-from-an-array-with-javascript/</guid>
       <description>This way of removing duplicates is quite simple and elegant, thanks to the methods Array.filter() and Array.indexOf().
 The Array.filter() method creates a new array from an existing one, which contains only the elements that meet the filter criteria. The Array.indexOf() method, on the other hand, returns the index of the first element of an array whose value matches the one passed to it as a parameter.</description>
     </item>

@@ -1,6 +1,6 @@
-# www.theagilecrafter.com
+# www.theagileartisan.com
 
-The source of my personal site, at [www.theagilecrafter.com](https://www.theagilecrafter.com/).
+The source of my personal site, at [www.theagileartisan.com](https://www.theagileartisan.com/).
 
 Feel free to fork it and change it however you want.
 ___
